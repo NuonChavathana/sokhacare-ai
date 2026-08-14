@@ -1,0 +1,69 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UrgencyLevel {
+  EMERGENCY
+  URGENT
+  ROUTINE
+  SELF_CARE
+}
+
+enum FacilityType {
+  hospital
+  referral_hospital
+  health_centre
+  clinic
+}
+
+model UserSession {
+  id            String         @id @default(uuid())
+  language      String         @default("km")
+  createdAt     DateTime       @default(now())
+  conversations Conversation[]
+}
+
+model Conversation {
+  id           String        @id @default(uuid())
+  sessionId    String
+  session      UserSession   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  sender       String
+  message      String
+  timestamp    DateTime      @default(now())
+  triageResult TriageResult?
+}
+
+model TriageResult {
+  id                      String       @id @default(uuid())
+  conversationId          String       @unique
+  conversation            Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  urgency                 UrgencyLevel
+  confidence              Float
+  summaryKm               String
+  summaryEn               String
+  recommendedFacilityType FacilityType
+  createdAt               DateTime     @default(now())
+}
+
+model HealthcareFacility {
+  id                 String       @id @default(uuid())
+  nameKm             String
+  nameEn             String
+  type               FacilityType
+  province           String
+  district           String
+  addressKm          String
+  addressEn          String
+  latitude           Float
+  longitude          Float
+  phone              String
+  emergencyPhone     String?
+  openingHours       String
+  emergencyAvailable Boolean      @default(false)
+  services           String[]
+  createdAt          DateTime     @default(now())
+}
