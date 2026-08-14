@@ -1,18 +1,39 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+
   body {
-    font-family: 'Inter', 'Noto Sans Khmer', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', 'Kantumruy Pro', 'Noto Sans Khmer', system-ui, -apple-system, sans-serif;
     color: #0f172a;
     background-color: #f8fafc;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+  }
+
+  button, a, input, select {
+    touch-action: manipulation;
   }
 }
 
 @keyframes pulse-slow {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.03); }
+  50% { opacity: 0.85; transform: scale(1.02); }
 }
 
 .animate-pulse-slow {
   animation: pulse-slow 3s infinite ease-in-out;
+}
+
+/* Custom Scrollbars for horizontal categories on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

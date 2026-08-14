@@ -218,7 +218,7 @@ export function ChatWindow() {
   };
 
   return (
-    <div className="flex flex-col h-[800px] bg-white rounded-3xl border border-teal-100 shadow-xl overflow-hidden relative">
+    <div className="flex flex-col h-[calc(100vh-160px)] min-h-[520px] sm:h-[800px] bg-white rounded-2xl sm:rounded-3xl border border-teal-100 shadow-xl overflow-hidden relative">
       {/* Offline Status Banner */}
       {isOffline && (
         <div className="bg-amber-500 text-slate-950 px-4 py-1.5 text-xs font-bold flex items-center justify-center gap-2">
