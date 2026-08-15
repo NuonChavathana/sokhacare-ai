@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { speechHandler } from '@/lib/speech/speech-recognition';
-import { Mic, MicOff, Volume2, AlertCircle, Edit3, Send, Check, Clock } from 'lucide-react';
+import { Mic, MicOff, Volume2, AlertCircle, Edit3, Send, Info } from 'lucide-react';
 
 interface VoiceInputProps {
   onTranscript: (text: string) => void;
@@ -14,15 +14,21 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
   const { language, t } = useLanguage();
   const [isListening, setIsListening] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [isSupported, setIsSupported] = useState(true);
+  const [isSupported, setIsSupported] = useState<boolean | null>(null); // null = not yet checked
+  const [browserWarning, setBrowserWarning] = useState<string | null>(null);
   const [seconds, setSeconds] = useState(0);
   const [capturedText, setCapturedText] = useState<string | null>(null);
   const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState('');
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Client-side only: check support after hydration
   useEffect(() => {
-    setIsSupported(speechHandler.isSupported());
+    const supported = speechHandler.isSupported();
+    setIsSupported(supported);
+    if (!supported) {
+      setBrowserWarning(speechHandler.getBrowserWarning());
+    }
   }, []);
 
   useEffect(() => {
@@ -57,7 +63,7 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
           setIsListening(false);
         },
         (err) => {
-          setErrorMsg(t('micNotSupported'));
+          setErrorMsg(err);
           setIsListening(false);
         },
         () => {
@@ -82,21 +88,31 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
+  // While we haven't yet checked (SSR safe), show a neutral button
+  const voiceReady = isSupported === true;
+  const voiceNotSupported = isSupported === false;
+
   return (
     <div className="relative inline-flex flex-col items-center">
       {/* Microphone Button */}
       <button
         type="button"
-        onClick={toggleListening}
-        disabled={disabled || !isSupported}
-        title={t('micSpeakHint')}
+        onClick={voiceNotSupported ? undefined : toggleListening}
+        disabled={disabled || voiceNotSupported}
+        title={
+          voiceNotSupported
+            ? (browserWarning ?? 'Voice not supported')
+            : (language === 'km' ? 'ចុចដើម្បីនិយាយ' : 'Tap to speak')
+        }
         className={`relative p-3 rounded-full transition-all duration-300 ${
-          isListening
+          voiceNotSupported
+            ? 'bg-slate-100 text-slate-400 cursor-not-allowed opacity-60'
+            : isListening
             ? 'bg-rose-600 text-white shadow-lg shadow-rose-500/50 scale-110'
-            : isSupported
-            ? 'bg-teal-100 hover:bg-teal-200 text-teal-800 shadow-2xs'
-            : 'bg-slate-100 text-slate-400 cursor-not-allowed'
+            : 'bg-teal-100 hover:bg-teal-200 active:bg-teal-300 text-teal-800 shadow-sm cursor-pointer'
         }`}
+        // Ensure touch events fire on iOS (needed for gesture requirement)
+        onTouchStart={() => {}}
       >
         {/* Animated Ripple ring during voice recording */}
         {isListening && (
@@ -107,7 +123,13 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
         )}
 
         <div className="relative z-10 flex items-center justify-center">
-          {isListening ? <Volume2 className="w-5 h-5 animate-bounce" /> : <Mic className="w-5 h-5 text-teal-700" />}
+          {voiceNotSupported ? (
+            <MicOff className="w-5 h-5" />
+          ) : isListening ? (
+            <Volume2 className="w-5 h-5 animate-bounce" />
+          ) : (
+            <Mic className="w-5 h-5 text-teal-700" />
+          )}
         </div>
       </button>
 
@@ -115,14 +137,14 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
       {isListening && (
         <div className="absolute bottom-full mb-3 px-3 py-1.5 bg-slate-900 text-white text-xs font-mono font-medium rounded-xl shadow-xl whitespace-nowrap flex items-center gap-2 z-30">
           <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
-          <span>{t('micListening')}</span>
+          <span>{language === 'km' ? 'កំពុងស្ដាប់...' : 'Listening...'}</span>
           <span className="text-teal-300 font-bold ml-1">({formatTime(seconds)})</span>
         </div>
       )}
 
-      {/* Captured Transcription Review Modal / Card */}
+      {/* Captured Transcription Review Card */}
       {capturedText && !isListening && (
-        <div className="absolute bottom-full mb-3 right-0 w-72 bg-white border border-teal-300 p-3.5 rounded-2xl shadow-2xl z-40 space-y-2 animate-fade-in text-xs">
+        <div className="absolute bottom-full mb-3 right-0 w-72 bg-white border border-teal-300 p-3.5 rounded-2xl shadow-2xl z-40 space-y-2 text-xs">
           <div className="flex items-center justify-between font-bold text-slate-700 border-b border-slate-100 pb-1.5">
             <span className="flex items-center gap-1 text-teal-700">
               <Mic className="w-3.5 h-3.5" />
@@ -133,7 +155,7 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
               className="text-[11px] text-teal-600 hover:text-teal-800 flex items-center gap-0.5 font-semibold"
             >
               <Edit3 className="w-3 h-3" />
-              <span>{t('editTranscription')}</span>
+              <span>{language === 'km' ? 'កែប្រែ' : 'Edit'}</span>
             </button>
           </div>
 
@@ -143,10 +165,11 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
               onChange={(e) => setEditedText(e.target.value)}
               className="w-full p-2 bg-slate-50 border border-teal-300 rounded-lg text-xs outline-none font-medium focus:ring-1 focus:ring-teal-500"
               rows={2}
+              autoFocus
             />
           ) : (
             <p className="text-slate-800 font-semibold italic bg-teal-50/70 p-2 rounded-lg border border-teal-100">
-              "{capturedText}"
+              &ldquo;{capturedText}&rdquo;
             </p>
           )}
 
@@ -159,20 +182,28 @@ export function VoiceInput({ onTranscript, disabled }: VoiceInputProps) {
             </button>
             <button
               onClick={handleSendCaptured}
-              className="px-3 py-1.5 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-bold text-xs flex items-center gap-1 shadow-2xs"
+              className="px-3 py-1.5 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-bold text-xs flex items-center gap-1 shadow-sm"
             >
               <Send className="w-3 h-3" />
-              <span>{t('sendTranscription')}</span>
+              <span>{language === 'km' ? 'ផ្ញើ' : 'Send'}</span>
             </button>
           </div>
         </div>
       )}
 
-      {/* Error Fallback Notice */}
+      {/* Error Message */}
       {errorMsg && (
-        <div className="mt-1 text-[11px] text-amber-700 flex items-center gap-1 font-medium whitespace-nowrap">
-          <AlertCircle className="w-3 h-3" />
+        <div className="absolute bottom-full mb-3 right-0 w-72 bg-amber-50 border border-amber-200 text-amber-800 text-[11px] px-3 py-2 rounded-xl shadow-lg z-40 flex items-start gap-1.5 font-medium">
+          <AlertCircle className="w-4 h-4 shrink-0 mt-0.5 text-amber-600" />
           <span>{errorMsg}</span>
+        </div>
+      )}
+
+      {/* iOS / Browser not supported warning */}
+      {voiceNotSupported && browserWarning && (
+        <div className="absolute bottom-full mb-3 right-0 w-72 bg-slate-800 text-slate-200 text-[11px] px-3 py-2 rounded-xl shadow-lg z-40 flex items-start gap-1.5 font-medium">
+          <Info className="w-4 h-4 shrink-0 mt-0.5 text-teal-400" />
+          <span>{browserWarning}</span>
         </div>
       )}
     </div>
