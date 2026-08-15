@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { useLanguage } from '@/context/LanguageContext';
+import { SokhaCareLogoIcon } from './SokhaCareLogoIcon';
 import { ShieldAlert, Phone, Heart, ExternalLink } from 'lucide-react';
 
 export function Footer() {
@@ -16,18 +16,10 @@ export function Footer() {
           {/* Column 1: Brand & Logo */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md border border-teal-500/40">
-                <Image
-                  src="/logo.png"
-                  alt="SokhaCare AI Logo"
-                  width={40}
-                  height={40}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+              <SokhaCareLogoIcon className="w-10 h-10" />
               <span className="text-xl font-black text-white">SokhaCare AI</span>
             </div>
-            <p className="text-xs text-slate-400 leading-relaxed">{t('appTagline')}</p>
+            <p className="text-xs text-slate-400 leading-relaxed font-medium">{t('appTagline')}</p>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 border border-teal-900 rounded-full text-xs text-teal-300 font-mono font-bold">
               <span className="w-2 h-2 rounded-full bg-teal-400" />
               Kingdom of Cambodia Startup MVP

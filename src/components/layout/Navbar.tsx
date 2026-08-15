@@ -2,11 +2,11 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { useDataSaver } from '@/context/DataSaverContext';
 import { OnboardingModal } from '@/components/onboarding/OnboardingModal';
+import { SokhaCareLogoIcon } from './SokhaCareLogoIcon';
 import {
   Activity,
   MapPin,
@@ -93,15 +93,7 @@ export function Navbar() {
           <div className="flex justify-between items-center h-16">
             {/* Custom Brand Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:scale-105 transition-transform border border-teal-500/40">
-                <Image
-                  src="/logo.png"
-                  alt="SokhaCare AI Logo"
-                  width={40}
-                  height={40}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+              <SokhaCareLogoIcon className="w-10 h-10 group-hover:scale-105 transition-transform" />
               <div>
                 <span className="text-xl font-black bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 bg-clip-text text-transparent">
                   SokhaCare AI
