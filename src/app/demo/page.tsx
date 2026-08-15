@@ -15,7 +15,11 @@ import {
   BarChart3,
   RotateCcw,
   PhoneCall,
-  Navigation
+  Navigation,
+  Trophy,
+  ShieldCheck,
+  Zap,
+  Users
 } from 'lucide-react';
 
 export default function PresentationDemoPage() {
@@ -71,18 +75,21 @@ export default function PresentationDemoPage() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-amber-900 via-teal-900 to-emerald-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div className="bg-gradient-to-r from-amber-950 via-teal-950 to-slate-950 text-white rounded-3xl p-6 sm:p-8 shadow-xl border border-amber-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="space-y-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-400/20 border border-amber-300/40 rounded-full text-xs font-bold text-amber-300">
-            <Presentation className="w-4 h-4 text-amber-300" />
-            <span>3-5 Minute Hackathon Pitch Presentation Mode</span>
+            <Trophy className="w-4 h-4 text-amber-300 animate-bounce" />
+            <span>3-5 Minute Hackathon Pitch Presentation Controller</span>
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">SokhaCare AI Presentation Workflow</h1>
+          <h1 className="text-2xl sm:text-3xl font-black tracking-tight">SokhaCare AI Live Pitch Mode</h1>
+          <p className="text-xs text-amber-100/90 font-medium">
+            Guided presentation flow designed for hackathon judges and startup pitch evaluations.
+          </p>
         </div>
 
         <button
           onClick={() => setCurrentScene(1)}
-          className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold flex items-center gap-1.5 transition-colors"
+          className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-bold flex items-center gap-1.5 transition-colors shrink-0"
         >
           <RotateCcw className="w-4 h-4" />
           <span>Restart Pitch</span>
@@ -90,47 +97,47 @@ export default function PresentationDemoPage() {
       </div>
 
       {/* Pitch Step Tracker */}
-      <div className="grid grid-cols-6 gap-2">
+      <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
         {scenes.map((s) => (
           <button
             key={s.id}
             onClick={() => setCurrentScene(s.id)}
-            className={`p-2 rounded-xl border text-center transition-all ${
+            className={`p-2.5 rounded-2xl border text-center transition-all ${
               currentScene === s.id
-                ? 'bg-teal-700 text-white font-extrabold border-teal-500 scale-105 shadow-md'
+                ? 'bg-teal-700 text-white font-black border-teal-400 scale-105 shadow-lg'
                 : currentScene > s.id
-                ? 'bg-teal-50 text-teal-800 border-teal-200 font-semibold'
-                : 'bg-white text-slate-400 border-slate-200 font-medium'
+                ? 'bg-teal-50 text-teal-900 border-teal-200 font-bold'
+                : 'bg-white text-slate-500 border-slate-200 font-semibold'
             }`}
           >
-            <span className="text-xs font-bold">Scene {s.id}</span>
+            <span className="text-xs block font-extrabold">Scene {s.id}</span>
           </button>
         ))}
       </div>
 
       {/* Main Presentation Stage */}
-      <div className="bg-white rounded-3xl border-2 border-teal-200 p-8 shadow-xl space-y-6">
+      <div className="bg-white rounded-3xl border-2 border-teal-200 p-6 sm:p-8 shadow-xl space-y-6">
         <div className="flex items-center justify-between border-b border-slate-100 pb-4">
-          <h2 className="text-xl font-extrabold text-slate-900">{scenes[currentScene - 1].title}</h2>
-          <span className="text-xs font-mono font-bold bg-amber-100 text-amber-900 px-3 py-1 rounded-full">
-            Step {currentScene} / 6
+          <h2 className="text-xl font-black text-slate-900">{scenes[currentScene - 1].title}</h2>
+          <span className="text-xs font-mono font-black bg-amber-100 text-amber-950 px-3.5 py-1 rounded-full">
+            Scene {currentScene} / 6
           </span>
         </div>
 
-        <p className="text-sm font-medium text-slate-700 bg-slate-50 p-3.5 rounded-2xl border border-slate-200">
-          💡 <strong>Presenter Script:</strong> {scenes[currentScene - 1].desc}
+        <p className="text-xs sm:text-sm font-semibold text-slate-800 bg-slate-50 p-4 rounded-2xl border border-slate-200 leading-relaxed">
+          💡 <strong>Presenter Pitch Script:</strong> {scenes[currentScene - 1].desc}
         </p>
 
         {/* Dynamic Stage Display Content per Scene */}
-        <div className="min-h-[300px] flex items-center justify-center p-6 bg-slate-50/70 rounded-2xl border border-slate-200">
+        <div className="min-h-[320px] flex items-center justify-center p-6 bg-slate-50/80 rounded-2xl border border-slate-200">
           {currentScene === 1 && (
             <div className="text-center space-y-4 max-w-lg">
-              <div className="w-16 h-16 rounded-2xl bg-teal-600 text-white flex items-center justify-center mx-auto shadow-lg">
+              <div className="w-16 h-16 rounded-2xl bg-teal-700 text-white flex items-center justify-center mx-auto shadow-xl">
                 <Sparkles className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-extrabold text-slate-900">{t('appName')}</h3>
-              <p className="text-sm font-semibold text-teal-800">{t('appTagline')}</p>
-              <p className="text-xs text-slate-600">{t('subTagline')}</p>
+              <h3 className="text-2xl font-black text-slate-900">{t('appName')}</h3>
+              <p className="text-sm font-extrabold text-teal-800">{t('appTagline')}</p>
+              <p className="text-xs text-slate-600 font-medium leading-relaxed">{t('subTagline')}</p>
             </div>
           )}
 
@@ -140,10 +147,10 @@ export default function PresentationDemoPage() {
                 <Mic className="w-5 h-5 animate-pulse text-rose-600" />
                 <span>Khmer Voice Input Triggered</span>
               </div>
-              <div className="bg-teal-50 p-4 rounded-xl text-sm font-extrabold text-slate-900 italic border border-teal-200">
+              <div className="bg-teal-50 p-4 rounded-xl text-sm font-black text-slate-900 italic border border-teal-200">
                 "ខ្ញុំឈឺទ្រូងខ្លាំង ហើយពិបាកដកដង្ហើម..."
               </div>
-              <div className="text-xs text-slate-500 font-medium">
+              <div className="text-xs text-slate-600 font-medium">
                 Web Speech API (`km-KH`) automatically transcribes speech into text ready for AI triage.
               </div>
             </div>
@@ -152,11 +159,11 @@ export default function PresentationDemoPage() {
           {currentScene === 3 && (
             <div className="w-full max-w-md bg-rose-600 text-white p-6 rounded-2xl shadow-xl space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-sm font-extrabold flex items-center gap-2">
+                <span className="text-sm font-black flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5 text-white animate-bounce" />
                   🔴 EMERGENCY ATTENTION
                 </span>
-                <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-mono">
+                <span className="text-xs bg-white/20 px-2 py-0.5 rounded-full font-mono font-bold">
                   Confidence: 95%
                 </span>
               </div>
@@ -180,7 +187,7 @@ export default function PresentationDemoPage() {
                 <MapPin className="w-4 h-4 text-teal-600" />
                 <span>Recommended Hospital: Calmette Hospital (មន្ទីរពេទ្យកាល់ម៉ែត)</span>
               </div>
-              <div className="text-xs text-slate-600">
+              <div className="text-xs text-slate-600 font-medium">
                 📍 3 Monivong Blvd, Daun Penh, Phnom Penh (Distance: 1.8 km)
               </div>
               <div className="grid grid-cols-2 gap-2 pt-2">
@@ -223,12 +230,12 @@ export default function PresentationDemoPage() {
             <div className="w-full max-w-md bg-white p-6 rounded-2xl border border-slate-200 shadow-md space-y-4 text-center">
               <BarChart3 className="w-12 h-12 text-teal-600 mx-auto" />
               <h4 className="font-extrabold text-base text-slate-900">Analytics Dashboard Demo</h4>
-              <p className="text-xs text-slate-600">
+              <p className="text-xs text-slate-600 font-medium">
                 Total Consultations: 1,284 | Emergency: 8% | Urgent: 22% | Routine: 48% | Self-Care: 22%
               </p>
               <Link
                 href="/dashboard"
-                className="inline-flex items-center gap-1 px-4 py-2 rounded-xl bg-teal-700 text-white text-xs font-bold shadow-md"
+                className="inline-flex items-center gap-1 px-4 py-2 rounded-xl bg-teal-700 text-white text-xs font-extrabold shadow-md"
               >
                 <span>Open Full Dashboard</span>
                 <ArrowRight className="w-3.5 h-3.5" />
@@ -255,6 +262,56 @@ export default function PresentationDemoPage() {
             <span>Next Scene</span>
             <ArrowRight className="w-4 h-4" />
           </button>
+        </div>
+      </div>
+
+      {/* HACKATHON JUDGE CRITERIA ALIGNMENT MATRIX */}
+      <div className="bg-slate-900 text-white rounded-3xl border border-teal-900 p-6 sm:p-8 space-y-6 shadow-xl">
+        <div className="flex items-center gap-2 border-b border-teal-800 pb-3">
+          <ShieldCheck className="w-6 h-6 text-emerald-400" />
+          <h3 className="text-lg font-black text-white">Hackathon & Startup Judge Criteria Matrix</h3>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-medium">
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <div className="font-extrabold text-emerald-300 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>1. Innovation & Accessibility</span>
+            </div>
+            <p className="text-slate-300 leading-relaxed">
+              Khmer voice speech-to-text input eliminates literacy and medical terminology barriers for Cambodian patients.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <div className="font-extrabold text-emerald-300 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>2. Patient Safety & Medical Guardrails</span>
+            </div>
+            <p className="text-slate-300 leading-relaxed">
+              Deterministic red-flag safety rules prioritize emergencies (119 call + directions) with clear preliminary notices.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <div className="font-extrabold text-emerald-300 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>3. Smart OpenStreetMap Navigation</span>
+            </div>
+            <p className="text-slate-300 leading-relaxed">
+              Scores facilities using distance, urgency compatibility, services, open status, and emergency availability.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+            <div className="font-extrabold text-emerald-300 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>4. Technical Execution & Scalability</span>
+            </div>
+            <p className="text-slate-300 leading-relaxed">
+              Full-stack Next.js 16 + Prisma ORM + Offline Data Saver mode ensuring 100% reliable execution during live judge demos.
+            </p>
+          </div>
         </div>
       </div>
     </div>
