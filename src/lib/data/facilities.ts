@@ -2,14 +2,14 @@ import { HealthcareFacility } from '@/types/triage';
 
 export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
   {
-    "id": "phnom-penh-intercare-hospital--",
+    "id": "kampong-cham-calmette-hospital",
     "name_km": "Intercare Hospital - Main Entrance",
-    "name_en": "Intercare Hospital - Main Entrance",
+    "name_en": "Calmette Hospital",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "Olympia Medical Hub, Building C5 Tower, Olympia City, Street 161, Phnom Penh 12253, កម្ពុជា",
-    "address_en": "Olympia Medical Hub, Building C5 Tower, Olympia City, Street 161, Phnom Penh 12253, Cambodia",
+    "address_en": "34 Preah Monivong Blvd (93), Phnom Penh, Cambodia",
     "latitude": 11.5612309,
     "longitude": 104.9141004,
     "phone": "+855 23 996 900",
@@ -26,14 +26,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-khema-international-",
+    "id": "kampong-cham-intercare-hospital---main-entrance",
     "name_km": "ខេមា",
-    "name_en": "Khema International Hospital",
+    "name_en": "Intercare Hospital - Main Entrance",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "18 ផ្លូវលេខ ៥២៨, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "18 Street 528, Phnom Penh, Cambodia",
+    "address_en": "Olympia Medical Hub, Building C5 Tower, Olympia City, Street 161, Phnom Penh 12253, Cambodia",
     "latitude": 11.580676500000001,
     "longitude": 104.90187329999999,
     "phone": "+855 99 667 066",
@@ -50,14 +50,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-royal-phnom-penh-hos",
+    "id": "kampong-cham-fac-116512",
     "name_km": "មន្ទីរពេទ្យជប៉ុនសាន់រ៉ាយភ្នំពេញ",
-    "name_en": "Royal Phnom Penh Hospital",
+    "name_en": "បន្ទប់ថែទាំជំងឺ",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "177E, Kola Loum Street (the Bay Road), Group 2, Phum 2, Sangkat, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "888 Russian Federation Blvd (110), Phnom Penh 12500, Cambodia",
+    "address_en": "XFR3+RX4, Krong Kampong Cham, Cambodia",
     "latitude": 11.581181299999999,
     "longitude": 104.93105410000001,
     "phone": "+855 23 260 152",
@@ -74,14 +74,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-sunrise-japan-hospit",
+    "id": "kampong-cham-fac-116443",
     "name_km": "មន្ទីរពេទ្យរ៉ូយ៉ាល់ភ្នំពេញ",
-    "name_en": "Sunrise Japan Hospital Phnom Penh",
+    "name_en": "មន្ទីរពេទ្យរ៉ូយ៉ាល់ភ្នំពេញ",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "888 មហាវិថី សហពន្ធ័រុស្ស៊ី (១១០), ភ្នំពេញ 12500, កម្ពុជា",
-    "address_en": "177E, Kola Loum Street (the Bay Road), Group 2, Phum 2, Sangkat, Phnom Penh, Cambodia",
+    "address_en": "888 មហាវិថី សហពន្ធ័រុស្ស៊ី (១១០), ភ្នំពេញ 12500, កម្ពុជា",
     "latitude": 11.562301999999999,
     "longitude": 104.8807683,
     "phone": "+855 23 991 000",
@@ -98,14 +98,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-central-hospital",
+    "id": "phnom-penh-devalda-check-up-center",
     "name_km": "មន្ទីរពេទ្យ សង់ត្រាល់",
-    "name_en": "Central Hospital",
-    "type": "hospital",
+    "name_en": "Devalda Check Up Center",
+    "type": "health_centre",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "82A street 154, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "82A street 154, Phnom Penh, Cambodia",
+    "address_en": "01-50 St 566, Phnom Penh 12150, Cambodia",
     "latitude": 11.5669538,
     "longitude": 104.9224144,
     "phone": "+855 23 214 955",
@@ -115,21 +115,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3.4,
     "review_count": 77,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-calmette-hospital",
+    "id": "kampong-cham-khmer--soviet-friendship-hospital",
     "name_km": "មន្ទីរ​ពេទ្យ​កាល់ម៉ែត",
-    "name_en": "Calmette Hospital",
+    "name_en": "KHMER -SOVIET FRIENDSHIP HOSPITAL",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "34 មហាវិថី ព្រះមុនីវង្ស (៩៣), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "34 Preah Monivong Blvd (93), Phnom Penh, Cambodia",
+    "address_en": "Phnom, Yothapol Khemarak Phoumin Blvd (271), Penh 12306, Cambodia",
     "latitude": 11.581206900000002,
     "longitude": 104.9165482,
     "phone": "+855 23 426 948",
@@ -146,7 +146,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-khmer--soviet-friend",
+    "id": "phnom-penh-khmer--soviet-friendship-hospital",
     "name_km": "មន្ទីរពេទ្យអន្តរជាតិ អរៀនដា",
     "name_en": "KHMER -SOVIET FRIENDSHIP HOSPITAL",
     "type": "hospital",
@@ -170,14 +170,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-orienda-internationa",
+    "id": "kampong-cham-royal-phnom-penh-hospital",
     "name_km": "មន្ទីរពេទ្យ​មិត្តភាព​ខ្មែរ-សូវៀត",
-    "name_en": "Orienda International Hospital",
+    "name_en": "Royal Phnom Penh Hospital",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "Phnom, មហាវិថី យោធពល ខេមរៈភូមិន្ទ (២៧១), Penh 12306, កម្ពុជា",
-    "address_en": "66, Street 31cc, 3, Phnom Penh 120605, Cambodia",
+    "address_en": "888 Russian Federation Blvd (110), Phnom Penh 12500, Cambodia",
     "latitude": 11.5445452,
     "longitude": 104.90290279999999,
     "phone": "+855 23 217 524",
@@ -194,14 +194,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-",
+    "id": "preah-sihanouk-fac-116451",
     "name_km": "មន្ទីរពេទ្យ​សាកលវិទ្យាល័យអន្តរជាតិ​សែនសុខ",
-    "name_en": "មន្ទីរពេទ្យ​សាកលវិទ្យាល័យអន្តរជាតិ​សែនសុខ",
+    "name_en": "西港国际中心医院",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Preah Sihanouk",
+    "district": "Preah Sihanouk",
     "address_km": "91-96 ផ្លូវលេខ ១៩៨៦, ភ្នំពេញ 120801, កម្ពុជា",
-    "address_en": "91-96 Street 1986, Phnom Penh 120801, Cambodia",
+    "address_en": "Cambodia, Preah Sihanouk, Unnamed RoadJGCH+5XC",
     "latitude": 11.5730379,
     "longitude": 104.87752789999999,
     "phone": "+855 70 888 251",
@@ -218,14 +218,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-raffles-medical-clin",
+    "id": "phnom-penh-orchid-koh-pich-hospital-2",
     "name_km": "មន្ទីរពេទ្យអរឃីដ - កោះពេជ្រ",
-    "name_en": "Raffles Medical Clinic, Raffles Medical Group, Phnom Penh",
+    "name_en": "Orchid Koh Pich Hospital",
     "type": "hospital",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "Yale Road, Phnom Penh 12000, កម្ពុជា",
-    "address_en": "161 Street 51, Phnom Penh 120204, Cambodia",
+    "address_en": "Yale Road, Phnom Penh 12000, Cambodia",
     "latitude": 11.5436306,
     "longitude": 104.9378486,
     "phone": "+855 12 322 025",
@@ -242,38 +242,37 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-preah-ang-duong-hosp",
+    "id": "phnom-penh-raffles-medical-clinic-raffles-medical-group-phnom-penh-3",
     "name_km": "រ៉ាហ្វល មេឌីខល",
-    "name_en": "Preah Ang Duong Hospital",
-    "type": "hospital",
+    "name_en": "Raffles Medical Clinic, Raffles Medical Group, Phnom Penh",
+    "type": "health_centre",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "161 Street 51, Phnom Penh 120204, កម្ពុជា",
-    "address_en": "HWCF+R97, Bulgaria Blvd, Phnom Penh, Cambodia",
+    "address_en": "161 Street 51, Phnom Penh 120204, Cambodia",
     "latitude": 11.5596771,
     "longitude": 104.9249059,
     "phone": "+855 23 216 911",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 3.4,
     "review_count": 186,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-advance-european-med",
+    "id": "phnom-penh-orchid-koh-pich-hospital",
     "name_km": "មន្ទីរ​ពេទ្យបង្អែករាជធានី​ភ្នំពេញ",
-    "name_en": "Advance European Medicare Center AEMC French Doctors",
+    "name_en": "Orchid Koh Pich Hospital",
     "type": "hospital",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "No. 137-139, មហាវិថី សាធារណរដ្ឋឆែក (169, កែងផ្លូវ 134, ភ្នំពេញ 12253, កម្ពុជា",
-    "address_en": "3 Preah Ang Phanavong St. (240), Phnom Penh, Cambodia",
+    "address_en": "Yale Road, Phnom Penh 12000, Cambodia",
     "latitude": 11.5673484,
     "longitude": 104.91248139999999,
     "phone": "+855 23 881 612",
@@ -290,14 +289,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-intercare-hospital--",
+    "id": "phnom-penh-techo-santepheap-national-hospital",
     "name_km": "មន្ទីរពេទ្យព្រះ​អង្គឌួង",
-    "name_en": "Intercare Hospital - 24/7 Emergency Entrance (Free Parking)",
+    "name_en": "Techo Santepheap National Hospital",
     "type": "hospital",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "HWCF+R97, មហាវិថី ប៊ុលហ្គារី, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "Olympia City, Street 161, Phnom Penh, Cambodia",
+    "address_en": "Kobsov Village, Win Win Boulevard, Sangkat, Phnom Penh, Cambodia",
     "latitude": 11.5720499,
     "longitude": 104.9234252,
     "phone": "+855 23 218 875",
@@ -314,7 +313,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-orange-cancer-clinic",
+    "id": "phnom-penh-orange-cancer-clinic--",
     "name_km": "មន្ទីរពេទ្យ​ ជោរៃ​ ភ្នំពេញ",
     "name_en": "Orange Cancer Clinic - គ្លីនិក អូរ៉េនឃែនស័រ",
     "type": "hospital",
@@ -338,38 +337,37 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-tropical-travellers-",
+    "id": "phnom-penh-advance-european-medicare-center-aemc-french-doctors-2",
     "name_km": "Advance European Medicare Center AEMC French Doctors",
-    "name_en": "Tropical & Travellers Medical Clinic",
-    "type": "hospital",
+    "name_en": "Advance European Medicare Center AEMC French Doctors",
+    "type": "health_centre",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "3 វិថី ព្រះអង្គផានុវង្ស (២៤០), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "No. 88, វិថី ឧកញ៉ាអ៊ឹងប៊ុនហូវ (108, Phnom Penh 12202, Cambodia",
+    "address_en": "3 Preah Ang Phanavong St. (240), Phnom Penh, Cambodia",
     "latitude": 11.559434099999999,
     "longitude": 104.92658870000001,
     "phone": "+855 12 634 115",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 4,
     "review_count": 94,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-international-medica",
+    "id": "kampong-cham-cambodia-rirmc",
     "name_km": "柬埔寨维元·长寿医院 Cambodia RIRMC🏥",
-    "name_en": "International Medical Service",
+    "name_en": "柬埔寨维元·长寿医院 Cambodia RIRMC🏥",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "កម្ពុជា, Phnom Penh, Sopheak Mongkol Rd, Koh Pich钻石岛中心市政厅",
-    "address_en": "No. 408, មហាវិថី ព្រះមុនីវង្ស (93), Phnom Penh 12302, Cambodia",
+    "address_en": "Cambodia, Phnom Penh, Sopheak Mongkol Rd, Koh Pich钻石岛中心市政厅",
     "latitude": 11.549872599999999,
     "longitude": 104.9395595,
     "phone": "+855 96 601 0990",
@@ -386,7 +384,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-intercare-hospital--",
+    "id": "phnom-penh-intercare-hospital---247-emergency-entrance-free-parking-2",
     "name_km": "Intercare Hospital - 24/7 Emergency Entrance (Free Parking)",
     "name_en": "Intercare Hospital - 24/7 Emergency Entrance (Free Parking)",
     "type": "hospital",
@@ -410,7 +408,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-orange-cancer-clinic",
+    "id": "phnom-penh-orange-cancer-clinic---2",
     "name_km": "Orange Cancer Clinic - គ្លីនិក អូរ៉េនឃែនស័រ",
     "name_en": "Orange Cancer Clinic - គ្លីនិក អូរ៉េនឃែនស័រ",
     "type": "hospital",
@@ -434,7 +432,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-",
+    "id": "phnom-penh-fac-116495",
     "name_km": "គ្លីនិក ត្រូពិចខល និង​ត្រាវែល មេឌីខល",
     "name_en": "គ្លីនិក ត្រូពិចខល និង​ត្រាវែល មេឌីខល",
     "type": "hospital",
@@ -458,7 +456,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-",
+    "id": "phnom-penh-fac-116469",
     "name_km": "មន្ទីរពហុព្យាបាលហ្វឺសសិនធឺរ",
     "name_en": "មន្ទីរពហុព្យាបាលហ្វឺសសិនធឺរ",
     "type": "hospital",
@@ -480,14 +478,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-khema-international-",
+    "id": "phnom-penh-preah-ang-duong-hospital-2",
     "name_km": "មន្ទីរពេទ្យព្រះកេតុមាលា (ពេទ្យយោធា ១៧៩)",
-    "name_en": "Khema International Hospital",
+    "name_en": "Preah Ang Duong Hospital",
     "type": "hospital",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "5 វិថី​ បារាំង (៤៧), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "18 Street 528, Phnom Penh, Cambodia",
+    "address_en": "HWCF+R97, Bulgaria Blvd, Phnom Penh, Cambodia",
     "latitude": 11.579825399999999,
     "longitude": 104.92171119999999,
     "phone": "+855 23 427 229",
@@ -504,14 +502,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-preah-ket-mealea-hos",
+    "id": "kampong-cham-sunrise-japan-hospital-phnom-penh",
     "name_km": "មន្ទីរពេទ្យមិត្តភាពកម្ពុជា-ចិន ព្រះកុសមៈ",
-    "name_en": "Preah Ket Mealea Hospital",
+    "name_en": "Sunrise Japan Hospital Phnom Penh",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "316d ផ្លូវលេខ ១៥០, ភ្នំពេញ 120406, កម្ពុជា",
-    "address_en": "5 France St. (47), Phnom Penh, Cambodia",
+    "address_en": "177E, Kola Loum Street (the Bay Road), Group 2, Phum 2, Sangkat, Phnom Penh, Cambodia",
     "latitude": 11.5642467,
     "longitude": 104.8894996,
     "phone": "+855 23 426 948",
@@ -528,14 +526,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-raffles-medical-clin",
+    "id": "phnom-penh-orienda-chamkarmon-hospital-3",
     "name_km": "Sing-Specialists Medical Centre - Hospital",
-    "name_en": "Raffles Medical Clinic, Raffles Medical Group, Phnom Penh",
-    "type": "hospital",
+    "name_en": "Orienda Chamkarmon Hospital",
+    "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "No.5 វិថី វត្តកោះ (៨១), ភ្នំពេញ 12211, កម្ពុជា",
-    "address_en": "161 Street 51, Phnom Penh 120204, Cambodia",
+    "address_en": "SangkatTonle, 9A St 466, Phnom Penh, Cambodia",
     "latitude": 11.565391499999999,
     "longitude": 104.91979669999999,
     "phone": "+855 86 330 338",
@@ -545,21 +543,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.9,
     "review_count": 139,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-phnom-penh-municipal",
+    "id": "phnom-penh-khema-international-polyclinic-3",
     "name_km": "មន្ទីរពហុព្យាបាល​អន្តរជាតិ​ខេមា",
-    "name_en": "Phnom Penh Municipal Referral Hospital",
-    "type": "hospital",
+    "name_en": "Khema International Polyclinic",
+    "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "28 វិថី ឧកញ៉ា ជ្រុនយូហាក់ (២៩៤), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "No. 137-139, មហាវិថី សាធារណរដ្ឋឆែក (169, កែងផ្លូវ 134, Phnom Penh 12253, Cambodia",
+    "address_en": "28 Oknha Chrun You Hak St. (294), Phnom Penh, Cambodia",
     "latitude": 11.553441099999999,
     "longitude": 104.9258981,
     "phone": "+855 98 911 811",
@@ -569,21 +567,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.6,
     "review_count": 656,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-orienda-chamkarmon-h",
+    "id": "phnom-penh-sok-chet-daunpenh-polyclinic",
     "name_km": "Orienda Chamkarmon Hospital",
-    "name_en": "Orienda Chamkarmon Hospital",
-    "type": "hospital",
+    "name_en": "Sok Chet Daunpenh Polyclinic មន្ទីរពហុព្យាបាល សុខចិត្ដ ដូនពេញ",
+    "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "SangkatTonle, 9A ផ្លូវលេខ ៤៦៦, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "SangkatTonle, 9A St 466, Phnom Penh, Cambodia",
+    "address_en": "Phnom, France St. (47), Penh 12201, Cambodia",
     "latitude": 11.5385263,
     "longitude": 104.9259233,
     "phone": "+855 12 593 789",
@@ -593,21 +591,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.8,
     "review_count": 1074,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-orchid-koh-pich-hosp",
+    "id": "siem-reap-royal-angkor-international-hospital-2",
     "name_km": "មន្ទីរពេទ្យ គន្ធបុប្ផាទី៤",
-    "name_en": "Orchid Koh Pich Hospital",
+    "name_en": "Royal Angkor International Hospital",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Siem Reap",
+    "district": "Siem Reap",
     "address_km": "HWHC+C7G, 90 វិថី ជីវពល (៩០), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "Yale Road, Phnom Penh 12000, Cambodia",
+    "address_en": "6 NR6, Krong Siem Reap 17000, Cambodia",
     "latitude": 11.5775334,
     "longitude": 104.9213054,
     "phone": "+855 23 428 009",
@@ -624,14 +622,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-cho-ray-phnom-penh-h",
+    "id": "phnom-penh-khema-international-polyclinic",
     "name_km": "មន្ទីរពេទ្យ​ជាតិ​តេជោ​សន្តិភាព",
-    "name_en": "Cho Ray Phnom Penh Hospital",
+    "name_en": "Khema International Polyclinic",
     "type": "hospital",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "Kobsov Village, Win Win Boulevard, Sangkat, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "1 Street No.1, Phnom Penh, Cambodia",
+    "address_en": "28 Oknha Chrun You Hak St. (294), Phnom Penh, Cambodia",
     "latitude": 11.6203127,
     "longitude": 104.8133539,
     "phone": "+855 87 781 119",
@@ -648,14 +646,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-khema-international-",
+    "id": "kampong-cham-fac-116479",
     "name_km": "Sihanouk Hospital Center of Hope",
-    "name_en": "Khema International Polyclinic",
+    "name_en": "បន្ទប់ពិគ្រោះ និងព្យាបាលជំងឺ សិរីបុត្រ",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "ផ្លូវលេខ ១៣៤, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "28 Oknha Chrun You Hak St. (294), Phnom Penh, Cambodia",
+    "address_en": "2F63+RP4 ភូមិឡឥដ្ឋ, ឃុំបឹងកុក, Krong Kampong Cham, Cambodia",
     "latitude": 11.5669341,
     "longitude": 104.9125244,
     "phone": "+855 23 882 484",
@@ -672,7 +670,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-maxicare-children-ho",
+    "id": "phnom-penh-maxicare-children-hospital",
     "name_km": "មន្ទីរពេទ្យកុមារ ម៉ាក់ស៊ីឃែរ",
     "name_en": "Maxicare Children Hospital",
     "type": "hospital",
@@ -696,7 +694,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-national-pediatric-h",
+    "id": "phnom-penh-national-pediatric-hospital",
     "name_km": "មន្ទីរសម្រាកព្យាបាលកុមារ វែលឃីដស៍ - Well Kids Child Health Clinic",
     "name_en": "National Pediatric Hospital",
     "type": "hospital",
@@ -720,14 +718,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh---well-kids-child-he",
+    "id": "siem-reap-national-pediatric-hospital",
     "name_km": "មន្ទីរពេទ្យ​កុមារ​ជាតិ",
-    "name_en": "មន្ទីរសម្រាកព្យាបាលកុមារ វែលឃីដស៍ - Well Kids Child Health Clinic",
+    "name_en": "National Pediatric Hospital",
     "type": "hospital",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "province": "Siem Reap",
+    "district": "Siem Reap",
     "address_km": "ដីឡូត៍លេខ ១០០ មហាវិថីសហព័ន្ធរុស្ស៊ី, ផ្លូវ​អាស៊ាន​លេខ១១, ខណ្ឌទួលគក ៧មករា, កម្ពុជា",
-    "address_en": "Building 80, St.15, S/K, Corner Samdech Preah Sangk Neayok Souk St. (136), Phnom Penh 12200, Cambodia",
+    "address_en": "ដីឡូត៍លេខ ១០០ មហាវិថីសហព័ន្ធរុស្ស៊ី, AH11, ខណ្ឌទួលគក ៧មករា, Cambodia",
     "latitude": 11.568498,
     "longitude": 104.8974451,
     "phone": "+855 23 884 137",
@@ -744,7 +742,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-domrey-mother-child-",
+    "id": "phnom-penh-domrey-mother-child-clinic",
     "name_km": "Domrey Mother & Child Clinic​",
     "name_en": "Domrey Mother & Child Clinic​",
     "type": "hospital",
@@ -768,14 +766,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-",
+    "id": "phnom-penh-sing-specialists-medical-centre---hospital-2",
     "name_km": "National Maternal and Children Health Center",
-    "name_en": "មជ្ឈមណ្ឌលជាតិគាំពារមាតា និង ទារក",
-    "type": "hospital",
+    "name_en": "Sing-Specialists Medical Centre - Hospital",
+    "type": "health_centre",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "86 វិថី ​មាត់ជ្រូក (៨៦), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "86 Moat Chrouk (St. 86), Phnom Penh, Cambodia",
+    "address_en": "No.5 Wat Koh St. (81), Phnom Penh 12211, Cambodia",
     "latitude": 11.579574899999999,
     "longitude": 104.9200651,
     "phone": "+855 23 725 973",
@@ -785,7 +783,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.2,
     "review_count": 20,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
@@ -840,7 +838,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-k-kid-pediatric-clin",
+    "id": "phnom-penh-k-kid-pediatric-clinic-chroy-changva",
     "name_km": "K Kid Pediatric Clinic Chroy Changva មន្ទីរសម្រាកព្យាបាលកុមារ ខេឃីដ ជ្រោយចង្វារ",
     "name_en": "K Kid Pediatric Clinic Chroy Changva មន្ទីរសម្រាកព្យាបាលកុមារ ខេឃីដ ជ្រោយចង្វារ",
     "type": "hospital",
@@ -888,7 +886,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-phnom-penh-pediatric",
+    "id": "phnom-penh-phnom-penh-pediatric-clinic",
     "name_km": "MONY KID Clinic",
     "name_en": "មន្ទីរសម្រាកព្យាបាលកុមារភ្នំពេញ​ Phnom Penh Pediatric Clinic",
     "type": "hospital",
@@ -912,7 +910,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-k-kid-pediatric-clin",
+    "id": "phnom-penh-k-kid-pediatric-clinic",
     "name_km": "K Kid Pediatric Clinic មន្ទីរសម្រាកព្យាបាលកុមារខេឃីដ សាខាចំការដូង",
     "name_en": "K Kid Pediatric Clinic មន្ទីរសម្រាកព្យាបាលកុមារខេឃីដ សាខាចំការដូង",
     "type": "hospital",
@@ -936,7 +934,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-orienda-chamkarmon-h",
+    "id": "phnom-penh-orienda-chamkarmon-hospital-2",
     "name_km": "មន្ទីរសម្រាកព្យាបាលកុមារភ្នំពេញ​ Phnom Penh Pediatric Clinic",
     "name_en": "Orienda Chamkarmon Hospital",
     "type": "hospital",
@@ -984,7 +982,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-sunrise-japan-hospit",
+    "id": "phnom-penh-sunrise-japan-hospital-phnom-penh-3",
     "name_km": "Chhour Y Seng Clinic(CYS អាគារសម្ភពថ្មី)",
     "name_en": "Sunrise Japan Hospital Phnom Penh",
     "type": "hospital",
@@ -1031,14 +1029,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-",
+    "id": "kampong-cham-singmed-international-medical-center",
     "name_km": "SingMed International Medical Center",
-    "name_en": "មជ្ឈមណ្ឌលជាតិគាំពារមាតា និង ទារក",
-    "type": "health_centre",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
+    "name_en": "SingMed International Medical Center",
+    "type": "hospital",
+    "province": "Kampong Cham",
+    "district": "Kampong Cham",
     "address_km": "No 64, Unit GF-2B, St 93, មហាវិថី ព្រះមុនីវង្ស (៩៣), ភ្នំពេញ 12202, កម្ពុជា",
-    "address_en": "86 Moat Chrouk (St. 86), Phnom Penh, Cambodia",
+    "address_en": "No 64, Unit GF-2B, St 93, មហាវិថី ព្រះមុនីវង្ស (៩៣), ភ្នំពេញ 12202, កម្ពុជា",
     "latitude": 11.574177700000002,
     "longitude": 104.91804959999999,
     "phone": "+855 12 277 799",
@@ -1048,14 +1046,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.7,
     "review_count": 58,
     "services": [
-      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
+      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "phnom-penh-singmed-internationa",
+    "id": "phnom-penh-singmed-international-medical-center",
     "name_km": "Sunrise Medical Center Sen Sok",
     "name_en": "SingMed International Medical Center",
     "type": "health_centre",
@@ -1078,7 +1076,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-sunrise-medical-cent",
+    "id": "phnom-penh-sunrise-medical-center-sen-sok",
     "name_km": "Dr. Heng cabinet (ដុកទ័រ ហេង)",
     "name_en": "Sunrise Medical Center Sen Sok",
     "type": "health_centre",
@@ -1101,7 +1099,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-yamei-international-",
+    "id": "phnom-penh-yamei-international-hospital",
     "name_km": "ម",
     "name_en": "Yamei international Hospital",
     "type": "health_centre",
@@ -1148,14 +1146,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-apsara-phnom-penh-cl",
+    "id": "phnom-penh-first-center-polyclinic-2",
     "name_km": "First Center Polyclinic",
-    "name_en": "Apsara Phnom Penh Clinic",
-    "type": "health_centre",
+    "name_en": "First Center Polyclinic",
+    "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "408 មហាវិថី ព្រះមុនីវង្ស (៩៣), ភ្នំពេញ, កម្ពុជា",
-    "address_en": "39 Oknha Nou Kan Street (St. 105), Phnom Penh 12258, Cambodia",
+    "address_en": "408 Preah Monivong Blvd (93), Phnom Penh, Cambodia",
     "latitude": 11.5466065,
     "longitude": 104.9223169,
     "phone": "+855 99 911 911",
@@ -1172,7 +1170,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-clinic-sokhapheap-th",
+    "id": "phnom-penh-clinic-sokhapheap-thmey",
     "name_km": "មណ្ឌលសុខភាពទួលគោក",
     "name_en": "Clinic Sokhapheap Thmey",
     "type": "health_centre",
@@ -1195,7 +1193,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-central-hospital",
+    "id": "phnom-penh-central-hospital-3",
     "name_km": "Hamariya Phnom Penh Kampuchea Paramed",
     "name_en": "Central Hospital",
     "type": "health_centre",
@@ -1266,28 +1264,6 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-chenda-polyclinic",
-    "name_km": "Chenda Polyclinic",
-    "name_en": "Chenda Polyclinic",
-    "type": "clinic",
-    "province": "Phnom Penh",
-    "district": "Phnom Penh",
-    "address_km": "No.8, SamdechEm, St39, Phnom Penh, កម្ពុជា",
-    "address_en": "No.8, SamdechEm, St39, Phnom Penh, Cambodia",
-    "latitude": 11.5820131,
-    "longitude": 104.9200936,
-    "phone": "+855 92 454 591",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
-    "services": [
-      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
-      "ផ្នែកជំងឺទូទៅ (General Medicine)",
-      "ថែទាំមាតា និងទារក (Maternal & Child Health)",
-      "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
-    ]
-  },
-  {
     "id": "phnom-penh-polyclinic-visalsok",
     "name_km": "មន្ទីពហុព្យាបាល វិសាលសុខ",
     "name_en": "POLYCLINIC VISALSOK",
@@ -1336,7 +1312,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-sakal-polyclinic-str",
+    "id": "phnom-penh-sakal-polyclinic-street-2004-sakal-hospital",
     "name_km": "Kangnam Hospital",
     "name_en": "Sakal Polyclinic Street 2004 (មន្ទីរពេទ្យសាកល Sakal Hospital)",
     "type": "clinic",
@@ -1360,7 +1336,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-orchid-sensok-polycl",
+    "id": "phnom-penh-orchid-sensok-polyclinic",
     "name_km": "មន្ទីរពហុព្យាបាល និង​សម្ភព សុក្រិត",
     "name_en": "Orchid SenSok Polyclinic",
     "type": "clinic",
@@ -1384,7 +1360,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-japan-life-poly-clin",
+    "id": "phnom-penh-japan-life-poly-clinic",
     "name_km": "Orchid SenSok Polyclinic",
     "name_en": "Japan Life Poly Clinic",
     "type": "clinic",
@@ -1408,14 +1384,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-sing-specialists-med",
+    "id": "phnom-penh-chenda-polyclinic",
     "name_km": "Japan Life Poly Clinic",
-    "name_en": "Sing-Specialists Medical Centre - Hospital",
+    "name_en": "Chenda Polyclinic",
     "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "HW83+CPM, ផ្លូវលេខ ១៣៨, ភ្នំពេញ, កម្ពុជា",
-    "address_en": "No.5 Wat Koh St. (81), Phnom Penh 12211, Cambodia",
+    "address_en": "No.8, SamdechEm, St39, Phnom Penh, Cambodia",
     "latitude": 11.5660908,
     "longitude": 104.9043066,
     "phone": "+855 23 678 8805",
@@ -1432,14 +1408,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-sok-chet-daunpenh-po",
+    "id": "phnom-penh-sing-specialists-medical-centre---hospital-3",
     "name_km": "មន្ទីពហុព្យាបាល បាយ័ន",
-    "name_en": "Sok Chet Daunpenh Polyclinic មន្ទីរពហុព្យាបាល សុខចិត្ដ ដូនពេញ",
+    "name_en": "Sing-Specialists Medical Centre - Hospital",
     "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "No. 327 មហាវិថី ព្រះនរោត្តម (៤១), ភ្នំពេញ 12354, កម្ពុជា",
-    "address_en": "Phnom, France St. (47), Penh 12201, Cambodia",
+    "address_en": "No.5 Wat Koh St. (81), Phnom Penh 12211, Cambodia",
     "latitude": 11.5308756,
     "longitude": 104.9304628,
     "phone": "+855 12 908 918",
@@ -1456,14 +1432,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-med115-polyclinic",
+    "id": "phnom-penh-ly-srey-vyna-polyclinic",
     "name_km": "Sok Chet Daunpenh Polyclinic មន្ទីរពហុព្យាបាល សុខចិត្ដ ដូនពេញ",
-    "name_en": "MED115 Polyclinic",
+    "name_en": "Ly Srey Vyna Polyclinic (មន្ទីរពហុព្យាបាល លី ស្រីវីណា)",
     "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "Phnom, France St. (47), Penh 12201, កម្ពុជា",
-    "address_en": "598 NR2, Phnom Penh, Cambodia",
+    "address_en": "317, St. 430, Toul tumpoung, 2, Phnom Penh 120109, Cambodia",
     "latitude": 11.5835008,
     "longitude": 104.91831649999999,
     "phone": "+855 96 819 8280",
@@ -1480,14 +1456,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-bayon-polyclinic-and",
+    "id": "phnom-penh-med115-polyclinic",
     "name_km": "មន្ទីរសម្រាកព្យាបាល លី ស្រីវីណា",
-    "name_en": "Bayon Polyclinic and Maternity",
+    "name_en": "MED115 Polyclinic",
     "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "317, St. 430, Toul tumpoung, 2, Phnom Penh 120109, កម្ពុជា",
-    "address_en": "No. 327 Preah Norodom Blvd (41), Phnom Penh 12354, Cambodia",
+    "address_en": "598 NR2, Phnom Penh, Cambodia",
     "latitude": 11.535701999999999,
     "longitude": 104.9124267,
     "phone": "+855 70 990 988",
@@ -1504,14 +1480,36 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-healing-polyclinic",
+    "id": "phnom-penh-bayon-polyclinic-and-maternity",
+    "name_km": "Chenda Polyclinic",
+    "name_en": "Bayon Polyclinic and Maternity",
+    "type": "clinic",
+    "province": "Phnom Penh",
+    "district": "Phnom Penh",
+    "address_km": "No.8, SamdechEm, St39, Phnom Penh, កម្ពុជា",
+    "address_en": "No. 327 Preah Norodom Blvd (41), Phnom Penh 12354, Cambodia",
+    "latitude": 11.5820131,
+    "longitude": 104.9200936,
+    "phone": "+855 92 454 591",
+    "emergency_phone": "119",
+    "opening_hours": "២៤ ម៉ោង / 24 Hours",
+    "emergency_available": true,
+    "services": [
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
+      "ផ្នែកជំងឺទូទៅ (General Medicine)",
+      "ថែទាំមាតា និងទារក (Maternal & Child Health)",
+      "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
+    ]
+  },
+  {
+    "id": "phnom-penh---asia-polyclinic",
     "name_km": "មន្ទីរពហុព្យាបាល អាស៊ី - Asia Polyclinic",
-    "name_en": "Healing Polyclinic មន្ទីរពហុព្យាបាលនិង​សម្ភព ហៀងលីង",
+    "name_en": "មន្ទីរពហុព្យាបាល អាស៊ី - Asia Polyclinic",
     "type": "clinic",
     "province": "Phnom Penh",
     "district": "Phnom Penh",
     "address_km": "សហព័ន្ធរុស្សី, Phnom Penh, កម្ពុជា",
-    "address_en": "BT516, St Boeung Tortoeng Thngai, Cambodia-Japan Friendship Bridge, Phnom Penh 12110, Cambodia",
+    "address_en": "សហព័ន្ធរុស្សី, Phnom Penh, Cambodia",
     "latitude": 11.569805899999999,
     "longitude": 104.9027514,
     "phone": "+855 23 426 948",
@@ -1528,7 +1526,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "phnom-penh-singmed-internationa",
+    "id": "phnom-penh-singmed-international-medical-center-2",
     "name_km": "Healing Polyclinic មន្ទីរពហុព្យាបាលនិង​សម្ភព ហៀងលីង",
     "name_en": "SingMed International Medical Center",
     "type": "clinic",
@@ -1550,14 +1548,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-royal-angkor-interna",
+    "id": "siem-reap-singjaya-medical-center-3",
     "name_km": "មន្ទីរពេទ្យ អន្តរជាតិ រ៉ូយ៉ាល់អង្គរ",
-    "name_en": "Royal Angkor International Hospital",
-    "type": "referral_hospital",
+    "name_en": "Singjaya Medical Center",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "6 ផ្លូវជាតិលេខ ៦, ក្រុងសៀមរាប 17000, កម្ពុជា",
-    "address_en": "6 NR6, Krong Siem Reap 17000, Cambodia",
+    "address_en": "659 Central Market St, Krong Siem Reap 171202, Cambodia",
     "latitude": 13.3822716,
     "longitude": 103.82824199999999,
     "phone": "+855 63 761 888",
@@ -1567,17 +1565,17 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3.8,
     "review_count": 299,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-neak-tep-hospital",
+    "id": "siem-reap-neak-tep-hospital-4",
     "name_km": "​មន្ទីរពេទ្យនាគទេព",
     "name_en": "Neak Tep Hospital",
-    "type": "referral_hospital",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "17254 វិថី ៧មករា, ក្រុងសៀមរាប, កម្ពុជា",
@@ -1591,21 +1589,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.1,
     "review_count": 159,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-angkor-japan-friends",
+    "id": "siem-reap-sambour-health-center",
     "name_km": "មន្ទីរពេទ្យ អន្តរជាតិ មិត្តភាព អង្គរជប៉ុន",
-    "name_en": "Angkor Japan Friendship International Hospital",
-    "type": "referral_hospital",
+    "name_en": "Sambour Health Center",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "Bun Rany Hun Sen St Chanlong Village, Borey Seang Nam Road, II, កម្ពុជា",
-    "address_en": "Bun Rany Hun Sen St Chanlong Village, Borey Seang Nam Road, II, Cambodia",
+    "address_en": "8RX5+C8P, Krong Siem Reap, Cambodia",
     "latitude": 13.3712407,
     "longitude": 103.7971621,
     "phone": "+855 76 677 7879",
@@ -1615,21 +1613,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.7,
     "review_count": 50,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-angkor-hospital-for-",
+    "id": "siem-reap-sokhapheap-polyclinic-2",
     "name_km": "មន្ទីរពេទ្យកុមារអង្គរ",
-    "name_en": "Angkor Hospital for Children",
-    "type": "referral_hospital",
+    "name_en": "Sokhapheap Polyclinic មន្ទីរពហុព្យាបាល សុខភាព",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "Tep Vong (Achamean) Road & Oum Chhay Street, 9V54+8FQ, វិថី ព្រះសង្ឃរាជ ទេព វង្ស, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "Tep Vong (Achamean) Road & Oum Chhay Street, 9V54+8FQ, Preah Sangreach Tep Vong St, Krong Siem Reap, Cambodia",
+    "address_en": "307 NR6, Krong Siem Reap, Cambodia",
     "latitude": 13.3585003,
     "longitude": 103.8562481,
     "phone": "+855 63 963 409",
@@ -1639,21 +1637,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.8,
     "review_count": 64,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-angkor-sante-hospita",
+    "id": "siem-reap-clinic-rhac-siem-reap-2",
     "name_km": "មន្ទីរពេទ្យ អង្គរសង់តេ",
-    "name_en": "Angkor Sante Hospital",
-    "type": "referral_hospital",
+    "name_en": "Clinic RHAC Siem Reap",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "0718, Street ផ្លូវលោកតាណឺយ​, ក្រុងសៀមរាប 17251, កម្ពុជា",
-    "address_en": "0718, Street Lok Taneuy Rd, Krong Siem Reap 17251, Cambodia",
+    "address_en": "គ្លីនិក/មណ្ឌលយុវវ័យ៖ ផ្លូវកូម៉ៃ កែង ផ្លូវ៣០ម៉ែត្រ ភូមិត្រពាំងសេះ, Krong Siem Reap, Cambodia",
     "latitude": 13.3567561,
     "longitude": 103.8709038,
     "phone": "+855 63 766 119",
@@ -1663,45 +1661,44 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4,
     "review_count": 26,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-siem-reap-provincial",
+    "id": "siem-reap-777-siem-reap-polyclinic-3",
     "name_km": "មន្ទីរពេទ្យ​បង្អែក​ខេត្តសៀមរាប",
-    "name_en": "Siem Reap Provincial Hospital",
-    "type": "referral_hospital",
+    "name_en": "777 Siem Reap Polyclinic",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "59 វិថី ២ធ្នូ, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "59 2 Thnou St, Krong Siem Reap, Cambodia",
+    "address_en": "National Road, Krong Siem Reap 17254, Cambodia",
     "latitude": 13.356286400000002,
     "longitude": 103.8553215,
     "phone": "+855 63 764 091",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 3.3,
     "review_count": 89,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-golden-queen-hospita",
+    "id": "siem-reap-angkor-hospital-for-children-visitor-centre",
     "name_km": "មន្ទីរពេទ្យ ហ្គោលដេនឃ្វីន",
-    "name_en": "Golden Queen Hospital",
-    "type": "referral_hospital",
+    "name_en": "Angkor Hospital for Children Visitor Centre",
+    "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "Road 60 Meter, Spean Neak Siem Reap Krong Siem Reap 17254, កម្ពុជា",
-    "address_en": "Road 60 Meter, Spean Neak Siem Reap Krong Siem Reap 17254, Cambodia",
+    "address_en": "Oknha Oum-Chhay St, Krong Siem Reap, Cambodia",
     "latitude": 13.3759839,
     "longitude": 103.86321489999999,
     "phone": "+855 78 331 133",
@@ -1718,14 +1715,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-khemarak-angkor-poly",
+    "id": "siem-reap-siem-reap-health-center",
     "name_km": "មន្ទីរពហុព្យាបាល ខេមរអង្គរ២ (Khemarak Angkor Polyclinic II)",
-    "name_en": "មន្ទីរពហុព្យាបាល ខេមរអង្គរ២ (Khemarak Angkor Polyclinic II)",
-    "type": "referral_hospital",
+    "name_en": "មណ្ឌលសុខភាពសៀមរាប Siem Reap Health Center",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "46 វិថី អាចារ្យហែមជៀវ, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "46 Wat Bo Rd, Krong Siem Reap, Cambodia",
+    "address_en": "9VX7+VJW, NR2, Siem Reap, Cambodia",
     "latitude": 13.359075899999999,
     "longitude": 103.8610874,
     "phone": "+855 77 343 000",
@@ -1735,21 +1732,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.2,
     "review_count": 26,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-777-siem-reap-polycl",
+    "id": "siem-reap-reaksmey-sophea-clinic-3",
     "name_km": "Reaksmey Sophea Clinic មន្ទីរសម្រាកព្យាបាល រស្មីសោភា",
-    "name_en": "777 Siem Reap Polyclinic",
-    "type": "referral_hospital",
+    "name_en": "Reaksmey Sophea Clinic មន្ទីរសម្រាកព្យាបាល រស្មីសោភា",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "National Road, Krong Siem Reap 17254, Cambodia",
+    "address_en": "Krong Siem Reap, Cambodia",
     "latitude": 13.3546575,
     "longitude": 103.8508289,
     "phone": "+855 17 557 357",
@@ -1759,7 +1756,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3.9,
     "review_count": 22,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
@@ -1790,34 +1787,33 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-royal-phnom-penh-hos",
+    "id": "siem-reap-clinic-rhac-siem-reap",
     "name_km": "Pachem Dental Clinic (Siem Reap Branch)",
-    "name_en": "Royal Phnom Penh Hospital",
-    "type": "referral_hospital",
+    "name_en": "Clinic RHAC Siem Reap",
+    "type": "clinic",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "#242, Angkor Wat Avenue, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "888 Russian Federation Blvd (110), Phnom Penh 12500, Cambodia",
+    "address_en": "គ្លីនិក/មណ្ឌលយុវវ័យ៖ ផ្លូវកូម៉ៃ កែង ផ្លូវ៣០ម៉ែត្រ ភូមិត្រពាំងសេះ, Krong Siem Reap, Cambodia",
     "latitude": 13.368467299999999,
     "longitude": 103.86128989999999,
     "phone": "+855 17 300 300",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 4.8,
     "review_count": 627,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-intercare-polyclinic",
+    "id": "siem-reap-intercare-polyclinic-3",
     "name_km": "មន្ទីរពហុព្យាបាល អុីនធ័រឃែរ (Intercare Polyclinic)",
     "name_en": "មន្ទីរពហុព្យាបាល អុីនធ័រឃែរ (Intercare Polyclinic)",
-    "type": "referral_hospital",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "Canadia Business Center Bldg, Sivutha Road, Krong Siem Reap 171202, កម្ពុជា",
@@ -1825,51 +1821,49 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "latitude": 13.3567672,
     "longitude": 103.8540639,
     "phone": "+855 23 996 911",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 5,
     "review_count": 6,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-singjaya-medical-cen",
+    "id": "siem-reap-royal-angkor-international-hospital-4",
     "name_km": "Singjaya Medical Center",
-    "name_en": "Singjaya Medical Center",
-    "type": "referral_hospital",
+    "name_en": "Royal Angkor International Hospital",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "659 Central Market St, Krong Siem Reap 171202, កម្ពុជា",
-    "address_en": "659 Central Market St, Krong Siem Reap 171202, Cambodia",
+    "address_en": "6 NR6, Krong Siem Reap 17000, Cambodia",
     "latitude": 13.356947199999999,
     "longitude": 103.85663029999999,
     "phone": "+855 99 321 808",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 4.8,
     "review_count": 149,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "siem-reap-pachem-dental-clinic",
+    "id": "preah-sihanouk-fac-114702",
     "name_km": "មន្ទីរពេទ្យអនុស្សាវរីយ៍ ស៊ុនយ៉ា ឃៀល",
-    "name_en": "Pachem Dental Clinic (Siem Reap Branch)",
-    "type": "referral_hospital",
-    "province": "Siem Reap",
-    "district": "Siem Reap",
+    "name_en": "西港第一人民医院",
+    "type": "hospital",
+    "province": "Preah Sihanouk",
+    "district": "Preah Sihanouk",
     "address_km": "7km, NR3, Kampot, កម្ពុជា",
-    "address_en": "#242, Angkor Wat Avenue, Krong Siem Reap, Cambodia",
+    "address_en": "118 Ekareach Street 100, Preah Sihanouk, Cambodia",
     "latitude": 10.5700858,
     "longitude": 104.13200069999999,
     "phone": "+855 77 666 752",
@@ -1886,7 +1880,31 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-angkor-children-hosp",
+    "id": "siem-reap-sonja-kill-memorial-hospital-skmh",
+    "name_km": "មណ្ឌលសុខភាពអំពិល",
+    "name_en": "Sonja Kill Memorial Hospital (SKMH)",
+    "type": "referral_hospital",
+    "province": "Siem Reap",
+    "district": "Siem Reap",
+    "address_km": "CX4Q+HH, ក្រុងសៀមរាប, កម្ពុជា",
+    "address_en": "7km, NR3, Kampot, Cambodia",
+    "latitude": 13.4064244,
+    "longitude": 103.9888829,
+    "phone": "+855 23 426 948",
+    "emergency_phone": "119",
+    "opening_hours": "២៤ ម៉ោង / 24 Hours",
+    "emergency_available": true,
+    "rating": 5,
+    "review_count": 2,
+    "services": [
+      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ផ្នែកជំងឺទូទៅ (General Medicine)",
+      "ថែទាំមាតា និងទារក (Maternal & Child Health)",
+      "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
+    ]
+  },
+  {
+    "id": "siem-reap-angkor-children-hospital",
     "name_km": "Angkor children hospital",
     "name_en": "Angkor children hospital",
     "type": "hospital",
@@ -1908,14 +1926,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-khunthak-bopha-hospi",
+    "id": "siem-reap-kantha-bopha-iv-childrens-hospital",
     "name_km": "មន្ទីរពេទ្យគន្ធបុប្ផា សៀមរាប",
-    "name_en": "Khunthak Bopha Hospital",
+    "name_en": "Kantha Bopha IV Children's Hospital",
     "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "9VG6+CGF, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "9VG6+CGF, Krong Siem Reap, Cambodia",
+    "address_en": "HWHC+C7G, 90 Chivapol (St. 90), Phnom Penh, Cambodia",
     "latitude": 13.3760739,
     "longitude": 103.8612914,
     "phone": "+855 23 426 948",
@@ -1932,14 +1950,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-clinic-komar-khet-kh",
+    "id": "siem-reap-khunthak-bopha-hospital",
     "name_km": "Angkor Hospital for Children Visitor Centre",
-    "name_en": "Clinic komar khet khnhom",
+    "name_en": "Khunthak Bopha Hospital",
     "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "វិថី ឧកញ៉ា អ៊ុំ ឆាយ, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "9V3P+R25, Krong Siem Reap, Cambodia",
+    "address_en": "9VG6+CGF, Krong Siem Reap, Cambodia",
     "latitude": 13.357928999999999,
     "longitude": 103.8557105,
     "phone": "+855 12 725 745",
@@ -1956,14 +1974,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-golden-queen-hospita",
+    "id": "siem-reap-clinic-komar-khet-khnhom",
     "name_km": "មន្ទីរសម្រាកព្យាបាលកុមារខេត្តខ្ញុំ",
-    "name_en": "Golden Queen Hospital",
+    "name_en": "Clinic komar khet khnhom",
     "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "9V3P+R25, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "Road 60 Meter, Spean Neak Siem Reap Krong Siem Reap 17254, Cambodia",
+    "address_en": "9V3P+R25, Krong Siem Reap, Cambodia",
     "latitude": 13.3546345,
     "longitude": 103.8847866,
     "phone": "+855 23 426 948",
@@ -1980,14 +1998,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-neak-tep-hospital",
+    "id": "siem-reap-angkor-japan-friendship-international-hospital-2",
     "name_km": "មន្ទីពេទ្យ ជ័យវរ្មន័ទី៧",
-    "name_en": "Neak Tep Hospital",
+    "name_en": "Angkor Japan Friendship International Hospital",
     "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "9VG5+HJX, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "17254 7 Makara St, Krong Siem Reap, Cambodia",
+    "address_en": "Bun Rany Hun Sen St Chanlong Village, Borey Seang Nam Road, II, Cambodia",
     "latitude": 13.376206,
     "longitude": 103.85922,
     "phone": "+855 23 426 948",
@@ -2004,14 +2022,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-khemarak-angkor-poly",
+    "id": "siem-reap-neak-tep-hospital-2",
     "name_km": "មន្ទីរពេទ្យកុមារអង្គរ - ច្រកចូលជំងឺទូទៅ",
-    "name_en": "មន្ទីរពហុព្យាបាល ខេមរអង្គរ២ (Khemarak Angkor Polyclinic II)",
+    "name_en": "Neak Tep Hospital",
     "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "9V54+3CP, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "46 Wat Bo Rd, Krong Siem Reap, Cambodia",
+    "address_en": "17254 7 Makara St, Krong Siem Reap, Cambodia",
     "latitude": 13.3578525,
     "longitude": 103.85603959999999,
     "phone": "+855 23 426 948",
@@ -2026,14 +2044,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-",
+    "id": "siem-reap-khemarak-angkor-polyclinic-ii-2",
     "name_km": "Maternal child medical center",
-    "name_en": "មន្ទីពេទ្យ ជ័យវរ្មន័ទី៧",
+    "name_en": "មន្ទីរពហុព្យាបាល ខេមរអង្គរ២ (Khemarak Angkor Polyclinic II)",
     "type": "hospital",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "9V43+VPP, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "9VG5+HJX, Krong Siem Reap, Cambodia",
+    "address_en": "46 Wat Bo Rd, Krong Siem Reap, Cambodia",
     "latitude": 13.3572049,
     "longitude": 103.854334,
     "phone": "+855 23 426 948",
@@ -2048,14 +2066,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-neak-tep-hospital",
+    "id": "siem-reap-cambocare-siem-reap-medical-center-2",
     "name_km": "CamboCare Siem Reap Medical Center",
-    "name_en": "Neak Tep Hospital",
-    "type": "clinic",
+    "name_en": "CamboCare Siem Reap Medical Center",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "Bamboo St, Krong Siem Reap, កម្ពុជា",
-    "address_en": "17254 7 Makara St, Krong Siem Reap, Cambodia",
+    "address_en": "Bamboo St, Krong Siem Reap, Cambodia",
     "latitude": 13.350275900000002,
     "longitude": 103.85722290000001,
     "phone": "+855 77 561 002",
@@ -2071,14 +2089,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-singjaya-medical-cen",
+    "id": "siem-reap-angkor-sante-hospital-3",
     "name_km": "មន្ទីរពហុព្យបាល ៧៧៧ សៀមរាប",
-    "name_en": "Singjaya Medical Center",
-    "type": "clinic",
+    "name_en": "Angkor Sante Hospital",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "National Road, Krong Siem Reap 17254, កម្ពុជា",
-    "address_en": "659 Central Market St, Krong Siem Reap 171202, Cambodia",
+    "address_en": "0718, Street Lok Taneuy Rd, Krong Siem Reap 17251, Cambodia",
     "latitude": 13.365951899999999,
     "longitude": 103.8520056,
     "phone": "+855 12 410 778",
@@ -2095,14 +2113,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap---marie-stopes-siem-",
+    "id": "siem-reap-siem-reap-provincial-hospital-2",
     "name_km": "គ្លីនិកម៉ារីស្តូបសៀមរាប - Marie Stopes Siem Reap Clinic",
-    "name_en": "គ្លីនិកម៉ារីស្តូបសៀមរាប - Marie Stopes Siem Reap Clinic",
-    "type": "clinic",
+    "name_en": "Siem Reap Provincial Hospital",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "Ta Phul Village Sangkat Svay Dangkum 68 Krong, ក្រុងសៀមរាប 17252, កម្ពុជា",
-    "address_en": "Ta Phul Village Sangkat Svay Dangkum 68 Krong, Krong Siem Reap 17252, Cambodia",
+    "address_en": "59 2 Thnou St, Krong Siem Reap, Cambodia",
     "latitude": 13.3617493,
     "longitude": 103.84974079999999,
     "phone": "+855 12 999 002",
@@ -2118,14 +2136,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-elite-angkor-clinic",
+    "id": "siem-reap-khemarak-angkor-polyclinic-ii-4",
     "name_km": "គ្លីនិក​រ៉ាក់ ខេត្តសៀមរាប",
-    "name_en": "Elite Angkor Clinic (មន្ទីរសម្រាកព្យាបាលអេលីតអង្គរ)",
-    "type": "clinic",
+    "name_en": "មន្ទីរពហុព្យាបាល ខេមរអង្គរ២ (Khemarak Angkor Polyclinic II)",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "គ្លីនិក/មណ្ឌលយុវវ័យ៖ ផ្លូវកូម៉ៃ កែង ផ្លូវ៣០ម៉ែត្រ ភូមិត្រពាំងសេះ, Krong Siem Reap, កម្ពុជា",
-    "address_en": "Unnamed Road, Krong Siem Reap, Cambodia",
+    "address_en": "46 Wat Bo Rd, Krong Siem Reap, Cambodia",
     "latitude": 13.3823922,
     "longitude": 103.8481801,
     "phone": "+855 96 723 1528",
@@ -2141,7 +2159,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-khemarak-angkor-poly",
+    "id": "siem-reap-khemarak-angkor-polyclinic-ii-3",
     "name_km": "Hotel Doctor Service",
     "name_en": "មន្ទីរពហុព្យាបាល ខេមរអង្គរ២ (Khemarak Angkor Polyclinic II)",
     "type": "clinic",
@@ -2165,7 +2183,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-pachem-dental-clinic",
+    "id": "siem-reap-pachem-dental-clinic-siem-reap-branch-2",
     "name_km": "Japan medical body Clinic",
     "name_en": "Pachem Dental Clinic (Siem Reap Branch)",
     "type": "clinic",
@@ -2188,14 +2206,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-japan-medical-body-c",
+    "id": "siem-reap-angkor-f-hospital-2",
     "name_km": "Sokhapheap Polyclinic មន្ទីរពហុព្យាបាល សុខភាព",
-    "name_en": "Japan medical body Clinic",
-    "type": "clinic",
+    "name_en": "Angkor F Hospital",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "307 ផ្លូវជាតិលេខ ៦, ក្រុងសៀមរាប, កម្ពុជា",
-    "address_en": "St khemarakphumen Krous Village Rd, Krong Siem Reap, Cambodia",
+    "address_en": "9V82+FM3, Krong Siem Reap 17252, Cambodia",
     "latitude": 13.3645368,
     "longitude": 103.85321619999999,
     "phone": "+855 23 426 948",
@@ -2212,7 +2230,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-intercare-polyclinic",
+    "id": "siem-reap-intercare-polyclinic-2",
     "name_km": "Prumraksa Clinic",
     "name_en": "មន្ទីរពហុព្យាបាល អុីនធ័រឃែរ (Intercare Polyclinic)",
     "type": "clinic",
@@ -2236,10 +2254,10 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-life-care-polyclinic",
+    "id": "siem-reap-life-care-polyclinic-2",
     "name_km": "មន្ទីរពហុព្យាបាល ឡាយហ៌្វឃែរ",
     "name_en": "Life Care Polyclinic",
-    "type": "clinic",
+    "type": "health_centre",
     "province": "Siem Reap",
     "district": "Siem Reap",
     "address_km": "National road No.6, Krong Siem Reap 17251, កម្ពុជា",
@@ -2284,7 +2302,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-angkor-japan-friends",
+    "id": "siem-reap-angkor-japan-friendship-international-hospital-3",
     "name_km": "តាព្រហ្មគ្លីនិក",
     "name_en": "Angkor Japan Friendship International Hospital",
     "type": "clinic",
@@ -2308,7 +2326,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap---marie-stopes-siem-",
+    "id": "siem-reap---marie-stopes-siem-reap-clinic-2",
     "name_km": "មណ្ឌលសុខភាពសៀមរាប Siem Reap Health Center",
     "name_en": "គ្លីនិកម៉ារីស្តូបសៀមរាប - Marie Stopes Siem Reap Clinic",
     "type": "health_centre",
@@ -2331,7 +2349,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-angkor-japan-friends",
+    "id": "siem-reap-angkor-japan-friendship-international-hospital-4",
     "name_km": "មណ្ឌល​សុខភាព មណ្ធល១",
     "name_en": "Angkor Japan Friendship International Hospital",
     "type": "health_centre",
@@ -2355,7 +2373,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "siem-reap-mondul-i-health-cent",
+    "id": "siem-reap-mondul-i-health-center",
     "name_km": "Sambour Health Center",
     "name_en": "Mondul I Health Center",
     "type": "health_centre",
@@ -2378,14 +2396,38 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-battambang-provincia",
+    "id": "siem-reap-angkor-hospital-for-children-3",
+    "name_km": "មណ្ឌល​សុខភាព​គោកចក",
+    "name_en": "Angkor Hospital for Children",
+    "type": "health_centre",
+    "province": "Siem Reap",
+    "district": "Siem Reap",
+    "address_km": "9VM3+8PF, ក្រុងសៀមរាប, កម្ពុជា",
+    "address_en": "Tep Vong (Achamean) Road & Oum Chhay Street, 9V54+8FQ, Preah Sangreach Tep Vong St, Krong Siem Reap, Cambodia",
+    "latitude": 13.3833249,
+    "longitude": 103.85431109999999,
+    "phone": "+855 23 426 948",
+    "emergency_phone": "119",
+    "opening_hours": "២៤ ម៉ោង / 24 Hours",
+    "emergency_available": true,
+    "rating": 5,
+    "review_count": 3,
+    "services": [
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
+      "ផ្នែកជំងឺទូទៅ (General Medicine)",
+      "ថែទាំមាតា និងទារក (Maternal & Child Health)",
+      "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
+    ]
+  },
+  {
+    "id": "battambang-chamkar-samraong-health-center",
     "name_km": "មន្ទីពេទ្យបង្អែក បាត់ដំបង",
-    "name_en": "Battambang Provincial Referral Hospital",
-    "type": "referral_hospital",
+    "name_en": "Chamkar Samraong Health Center",
+    "type": "health_centre",
     "province": "Battambang",
     "district": "Battambang",
     "address_km": "4652+CR2, ក្រុងបាត់ដំបង, កម្ពុជា",
-    "address_en": "4652+CR2, Krong Battambang, Cambodia",
+    "address_en": "458W+RPJ, Krong Battambang, Cambodia",
     "latitude": 13.108518499999999,
     "longitude": 103.2020125,
     "phone": "+855 96 382 8401",
@@ -2395,41 +2437,40 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3.9,
     "review_count": 40,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "battambang-handa-medical-center",
-    "name_km": "Handa Medical Center",
-    "name_en": "Handa Medical Center",
-    "type": "hospital",
+    "id": "battambang-clinic",
+    "name_km": "មន្ទីរពេទ្យសង្រ្គោះបន្ទាន់",
+    "name_en": "សុខសម្ភព គ្លីនិក​ Clinic",
+    "type": "health_centre",
     "province": "Battambang",
     "district": "Battambang",
     "address_km": "614 ផ្លូវ​ជាតិ​លេខ៥, ក្រុងបាត់ដំបង, កម្ពុជា",
-    "address_en": "614 NR5, Krong Battambang, Cambodia",
-    "latitude": 13.098773399999999,
-    "longitude": 103.20756329999999,
-    "phone": "+855 95 520 654",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
-    "rating": 3.9,
-    "review_count": 16,
+    "address_en": "457W+2M7, Krong Battambang, Cambodia",
+    "latitude": 13.098847699999999,
+    "longitude": 103.2075577,
+    "phone": "+1 561-866-8833",
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
+    "rating": 4.8,
+    "review_count": 20,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "battambang-sovann-polyclinic",
+    "id": "battambang-sovann-polyclinic-2",
     "name_km": "មន្ទីរពហុព្យាបាលសុវណ្ណ",
     "name_en": "មន្ទីរពហុព្យាបាល សុវណ្ណ​ SOVANN POLYCLINIC",
-    "type": "hospital",
+    "type": "health_centre",
     "province": "Battambang",
     "district": "Battambang",
     "address_km": "77, Preah Vihea Street, Phum Kampong Krabei, Sangkat Svaypor, Battambang, City, កម្ពុជា",
@@ -2443,7 +2484,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.4,
     "review_count": 17,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
@@ -2498,7 +2539,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang--golden-polyclinic-a",
+    "id": "battambang--golden-polyclinic-and-maternity",
     "name_km": "មន្ទីរពេទ្យ យីគក់",
     "name_en": "មន្ទីរពហុព្យាបាល និង សម្ភព ហ្គោលដិន-Golden Polyclinic And Maternity",
     "type": "hospital",
@@ -2522,7 +2563,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-bangkok-hospital-off",
+    "id": "battambang-bangkok-hospital-office",
     "name_km": "ការិយាល័យ​មន្ទីរពេទ្យ​បាងកក",
     "name_en": "Bangkok Hospital Office",
     "type": "hospital",
@@ -2546,7 +2587,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116295",
     "name_km": "មន្ទីរព្យាបាល សម្ភព នូវែលបាត់ដំបង",
     "name_en": "មន្ទីរព្យាបាល សម្ភព នូវែលបាត់ដំបង",
     "type": "hospital",
@@ -2570,7 +2611,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116360",
     "name_km": "មន្ទីរពហុព្យាបាល និងសម្ភព ថ្មគោលសិរីមង្គល",
     "name_en": "មន្ទីរពហុព្យាបាល និងសម្ភព ថ្មគោលសិរីមង្គល",
     "type": "hospital",
@@ -2594,7 +2635,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang---marie-stopes-batta",
+    "id": "battambang---marie-stopes-battambang-clinic",
     "name_km": "ពេទ្យឆ្មប គឹម សាវង្ស",
     "name_en": "គ្លីនិកម៉ារីស្តូបបាត់ដំបង - Marie Stopes Battambang Clinic",
     "type": "hospital",
@@ -2642,31 +2683,30 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-clinic-rhac-battamba",
+    "id": "battambang---marie-stopes-battambang-clinic-2",
     "name_km": "គ្លីនិកម៉ារីស្តូបបាត់ដំបង - Marie Stopes Battambang Clinic",
-    "name_en": "Clinic RHAC Battambang",
-    "type": "hospital",
+    "name_en": "គ្លីនិកម៉ារីស្តូបបាត់ដំបង - Marie Stopes Battambang Clinic",
+    "type": "health_centre",
     "province": "Battambang",
     "district": "Battambang",
     "address_km": "No. 152, National Rumchek 4 Village, City, 02353, Rd No 5, Krong Battambang, កម្ពុជា",
-    "address_en": "គ្លីនិក/មណ្ឌលយុវវ័យ៖ ផ្ទះលេខ១៥៤ ផ្លូវ លេខ ៥២៤ កែងនិង ៥០១ ភូមិព្រែកមហាទេព ឃុំស្វាយប៉ោ ស្រុកបាត់ដំបង ទូរស័ព្ទ៖ ០៥៣ ៩៥២ ៦១០, Krong Battambang, Cambodia",
+    "address_en": "No. 152, National Rumchek 4 Village, City, 02353, Rd No 5, Krong Battambang, Cambodia",
     "latitude": 13.0926191,
     "longitude": 103.20800190000001,
     "phone": "+855 12 999 002",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 4,
     "review_count": 4,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "battambang-chenla-university-of",
+    "id": "battambang-chenla-university-of-battambang",
     "name_km": "មន្ទីរពេទ្យ ពពីរ",
     "name_en": "Chenla University of Battambang",
     "type": "hospital",
@@ -2690,7 +2730,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-battambang-pediatric",
+    "id": "battambang-battambang-pediatric-clinic",
     "name_km": "សាកលវិទ្យាល័យចេនឡា(សាខាខេត្តបាត់ដំបង)",
     "name_en": "Battambang Pediatric Clinic",
     "type": "hospital",
@@ -2714,7 +2754,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116290",
     "name_km": "មន្ទីរសម្រាកព្យាបាលកុមារបាត់ដំបង",
     "name_en": "មណ្ឌលសុខភាពព្រែកព្រះស្តេច",
     "type": "hospital",
@@ -2738,7 +2778,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116308",
     "name_km": "មណ្ឌលសុខភាពព្រែកព្រះស្តេច",
     "name_en": "មណ្ឌលសុខភាពព្រែកព្រះស្តេច",
     "type": "hospital",
@@ -2760,7 +2800,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-battambang-provincia",
+    "id": "battambang-battambang-provincial-referral-hospital-3",
     "name_km": "មណ្ឌលសុខភាព ចំការសំរោង",
     "name_en": "Battambang Provincial Referral Hospital",
     "type": "health_centre",
@@ -2783,7 +2823,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-handa-trauma-center-",
+    "id": "battambang-handa-trauma-center---formerly-wm-emergency-hospital-2",
     "name_km": "ស៊ន រ៉ានី",
     "name_en": "Handa Trauma Center - Formerly WM Emergency Hospital",
     "type": "health_centre",
@@ -2807,7 +2847,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116298",
     "name_km": "មណ្ឌលសុខភាព ព្រែកព្រះស្ដេច",
     "name_en": "មណ្ឌលសុខភាព ព្រែកព្រះស្ដេច",
     "type": "health_centre",
@@ -2831,7 +2871,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-welcome-shelter-for-",
+    "id": "battambang-welcome-shelter-for-the-sick-pet-yiey-chi-battambang",
     "name_km": "មណ្ឌលសុខភាព វត្តគរ",
     "name_en": "Welcome Shelter for the Sick (Pet Yiey Chi) Battambang",
     "type": "health_centre",
@@ -2854,7 +2894,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-drpel-vanna-mohatep-",
+    "id": "battambang-drpel-vanna-mohatep-clinic",
     "name_km": "មន្ទីរសុខាភិបាលខេត្តបាត់ដំបង",
     "name_en": "Dr.Pel Vanna Mohatep Clinic",
     "type": "health_centre",
@@ -2877,7 +2917,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-clinic-rhac-battamba",
+    "id": "battambang-clinic-rhac-battambang-2",
     "name_km": "គ្លីនិកឆ្អឹង សន្លាក់ សុមុនី",
     "name_en": "Clinic RHAC Battambang",
     "type": "health_centre",
@@ -2899,7 +2939,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116355",
     "name_km": "Samroung Knong Health Center",
     "name_en": "មន្ទីរព្យាបាល សម្ភព នូវែលបាត់ដំបង",
     "type": "health_centre",
@@ -2920,7 +2960,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-",
+    "id": "battambang-fac-116311",
     "name_km": "Welcome Shelter for the Sick (Pet Yiey Chi) Battambang",
     "name_en": "គ្លីនិកឆ្អឹង សន្លាក់ សុមុនី",
     "type": "health_centre",
@@ -2966,7 +3006,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-voatkor-health-cente",
+    "id": "battambang-voatkor-health-center",
     "name_km": "ឡាបែល គ្លីនិក កែសម្ផស្ស Labelle Esthetic Center",
     "name_en": "VoatKor Health Center",
     "type": "health_centre",
@@ -3012,7 +3052,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-huot-sokun-polyclini",
+    "id": "battambang-huot-sokun-polyclinic",
     "name_km": "គ្លីនិករ៉ាក់ ខេត្តបាត់ដំបង",
     "name_en": "Huot Sokun Polyclinic",
     "type": "health_centre",
@@ -3035,7 +3075,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-yi-kuok-hospital--",
+    "id": "battambang-yi-kuok-hospital---2",
     "name_km": "Toulta Ek Health Center",
     "name_en": "YI KUOK HOSPITAL - មន្ទីរពេទ្យ យី គក់",
     "type": "health_centre",
@@ -3056,7 +3096,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "battambang-samroung-knong-healt",
+    "id": "battambang-samroung-knong-health-center",
     "name_km": "មណ្ឌលសុខភាព​រតនះ",
     "name_en": "Samroung Knong Health Center",
     "type": "health_centre",
@@ -3100,14 +3140,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-kampot-referral-hosp",
+    "id": "kampot-sonja-kill-memorial-hospital-skmh-2",
     "name_km": "មន្ទីរពេទ្យបង្អែក ខេត្តកំពត",
-    "name_en": "Kampot Referral Hospital",
-    "type": "referral_hospital",
+    "name_en": "Sonja Kill Memorial Hospital (SKMH)",
+    "type": "health_centre",
     "province": "Kampot",
     "district": "Kampot",
     "address_km": "J56H+84C, Riverside Rd, Kampot, កម្ពុជា",
-    "address_en": "J56H+84C, Riverside Rd, Kampot, Cambodia",
+    "address_en": "7km, NR3, Kampot, Cambodia",
     "latitude": 10.6108076,
     "longitude": 104.17777550000001,
     "phone": "+855 33 210 162",
@@ -3117,21 +3157,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3.5,
     "review_count": 20,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "kampot-sokhak-kampot-polycl",
+    "id": "kampot-green-global-medical-center-2",
     "name_km": "មន្ទីរសម្រាកព្យាបាលនិងសម្ភព កំពតស្តង់ដា 贡布标准诊所和妇产科",
-    "name_en": "Sokhak Kampot Polyclinic",
-    "type": "hospital",
+    "name_en": "Green Global Medical Center",
+    "type": "health_centre",
     "province": "Kampot",
     "district": "Kampot",
     "address_km": "ផ្លូវជាតិលេខ ៣, ក្រុងកំពត 070210, កម្ពុជា",
-    "address_en": "NR3, Kampot 070210, Cambodia",
+    "address_en": "18 Street 702, Kampot 070801, Cambodia",
     "latitude": 10.6443797,
     "longitude": 104.18901389999999,
     "phone": "+855 81 558 688",
@@ -3141,45 +3181,44 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.5,
     "review_count": 23,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "kampot-green-global-medical",
+    "id": "kampot-kampot-referral-hospital-3",
     "name_km": "Green Global Medical Center",
-    "name_en": "Green Global Medical Center",
-    "type": "hospital",
+    "name_en": "Kampot Referral Hospital",
+    "type": "health_centre",
     "province": "Kampot",
     "district": "Kampot",
     "address_km": "18 Street 702, Kampot 070801, កម្ពុជា",
-    "address_en": "18 Street 702, Kampot 070801, Cambodia",
+    "address_en": "J56H+84C, Riverside Rd, Kampot, Cambodia",
     "latitude": 10.6067298,
     "longitude": 104.1861206,
     "phone": "+855 89 240 561",
-    "emergency_phone": "119",
-    "opening_hours": "២៤ ម៉ោង / 24 Hours",
-    "emergency_available": true,
+    "opening_hours": "07:30 - 17:00 (ច័ន្ទ - សុក្រ)",
+    "emergency_available": false,
     "rating": 4.1,
     "review_count": 22,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "kampot-clinique-et-maternit",
+    "id": "kampot-boeng-touk-health-post",
     "name_km": "Clinique et Maternite Kampot Sante",
-    "name_en": "Clinique et Maternite Kampot Sante",
-    "type": "hospital",
+    "name_en": "Boeng Touk Health post",
+    "type": "health_centre",
     "province": "Kampot",
     "district": "Kampot",
     "address_km": "34, AH123, Kampot, កម្ពុជា",
-    "address_en": "34, AH123, Kampot, Cambodia",
+    "address_en": "H5J5+82, Kampot, Cambodia",
     "latitude": 10.608689199999999,
     "longitude": 104.1845046,
     "phone": "+855 12 224 511",
@@ -3189,21 +3228,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3.3,
     "review_count": 7,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "kampot-sonja-kill-memorial-",
+    "id": "kampot-kampot-khemra-clinic",
     "name_km": "Kampot Khemra Clinic",
-    "name_en": "Sonja Kill Memorial Hospital (SKMH)",
+    "name_en": "Kampot Khemra Clinic",
     "type": "health_centre",
     "province": "Kampot",
     "district": "Kampot",
     "address_km": "J55V+69W, ក្រុងកំពត, កម្ពុជា",
-    "address_en": "7km, NR3, Kampot, Cambodia",
+    "address_en": "J55V+69W, Kampot, Cambodia",
     "latitude": 10.6081077,
     "longitude": 104.19344889999999,
     "phone": "+855 12 996 994",
@@ -3219,7 +3258,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-",
+    "id": "kampot-fac-114789",
     "name_km": "មណ្ឌលសុខភាព ក្រាំងអំពិល",
     "name_en": "មន្ទីរសម្រាកព្យាបាល ឯកទេសសុខភាព",
     "type": "health_centre",
@@ -3242,7 +3281,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-krung-kampot-poly-cl",
+    "id": "kampot-krung-kampot-poly-clinic",
     "name_km": "Boeng Touk Health post",
     "name_en": "Krung Kampot Poly Clinic",
     "type": "health_centre",
@@ -3265,7 +3304,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-clinique-et-maternit",
+    "id": "kampot-clinique-et-maternite-kampot-sante-2",
     "name_km": "មន្ទីរសម្រាកព្យាបាល ឯកទេសសុខភាព",
     "name_en": "Clinique et Maternite Kampot Sante",
     "type": "health_centre",
@@ -3289,7 +3328,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-rasey-medical-consul",
+    "id": "kampot-rasey-medical-consultation-room",
     "name_km": "Men’s health Cambodia ( MHC Kampot )",
     "name_en": "បន្ទប់ពិគ្រោះនិងព្យាបាលជំងឺ​ រ៉ាសី (Rasey Medical Consultation Room)",
     "type": "health_centre",
@@ -3312,7 +3351,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-vitro-clinical-diagn",
+    "id": "kampot-vitro-clinical-diagnostic-laboratory",
     "name_km": "មណ្ឌលសុខភាពកំពង់កណ្តាល",
     "name_en": "VITRO Clinical Diagnostic Laboratory",
     "type": "health_centre",
@@ -3335,7 +3374,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-krang-ampil-health-c",
+    "id": "kampot-krang-ampil-health-center",
     "name_km": "គ្លីនិករ៉ាក់ ខេត្ត កំពត",
     "name_en": "Krang Ampil Health Center",
     "type": "health_centre",
@@ -3381,7 +3420,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-sok-san-clinic-and-m",
+    "id": "kampot-sok-san-clinic-and-maternity",
     "name_km": "Sukha Kampot",
     "name_en": "Sok San Clinic and Maternity",
     "type": "health_centre",
@@ -3404,7 +3443,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-mens-health-cambodia",
+    "id": "kampot-mens-health-cambodia-mhc-kampot",
     "name_km": "Sokret Vinichhay",
     "name_en": "Men’s health Cambodia ( MHC Kampot )",
     "type": "health_centre",
@@ -3428,7 +3467,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-",
+    "id": "kampot-fac-114796",
     "name_km": "LYMPHATIC DRAINAGE BY SITA",
     "name_en": "មណ្ឌលសុខភាពកំពង់កណ្តាល",
     "type": "health_centre",
@@ -3451,7 +3490,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot---cbo-prep-dic-kompo",
+    "id": "kampot---cbo-prep-dic-kompot",
     "name_km": "Treuy Kho Health Center",
     "name_en": "សេវាប្រឹពសហគមន៍-កំពត (CBO PrEP DIC-Kompot)",
     "type": "health_centre",
@@ -3516,7 +3555,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampot-angromeas-health-cen",
+    "id": "kampot-angromeas-health-center",
     "name_km": "Medical Center 3d",
     "name_en": "Angromeas Health Center មណ្ឌលសុខភាព អង្គរមាស",
     "type": "health_centre",
@@ -3537,10 +3576,10 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-sihanouk-province-re",
+    "id": "preah-sihanouk-sihanouk-province-referral-hospital-2",
     "name_km": "មន្ទីរពេទ្យ​បង្អែក ខេត្តព្រះសីហនុ",
     "name_en": "Sihanouk Province Referral Hospital",
-    "type": "referral_hospital",
+    "type": "hospital",
     "province": "Preah Sihanouk",
     "district": "Preah Sihanouk",
     "address_km": "No. 031, វិថី ឯករាជ្យ, Ekareach St, ក្រុងព្រះសីហនុ, កម្ពុជា",
@@ -3561,10 +3600,10 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-sihanoukville-intern",
+    "id": "preah-sihanouk-sihanoukville-international-clinic-2",
     "name_km": "មន្ទីរសម្រាកព្យាបាល​អន្តរជាតិ​ក្រុង​ព្រះសីហនុ",
     "name_en": "Sihanoukville International Clinic",
-    "type": "hospital",
+    "type": "clinic",
     "province": "Preah Sihanouk",
     "district": "Preah Sihanouk",
     "address_km": "កម្ពុជា, Preah Sihanouk, Ekreach St邮政编码: 18000",
@@ -3578,21 +3617,21 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4,
     "review_count": 120,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "preah-sihanouk-sihanoukville-cornin",
+    "id": "preah-sihanouk-koh-rong-clinic-and-pharmacy",
     "name_km": "Sihanoukville-Corning General 24 Hours Clinic",
-    "name_en": "Sihanoukville-Corning General 24 Hours Clinic",
-    "type": "hospital",
+    "name_en": "Koh rong clinic and pharmacy",
+    "type": "clinic",
     "province": "Preah Sihanouk",
     "district": "Preah Sihanouk",
     "address_km": "JGGF+5R5, ក្រុងព្រះសីហនុ, កម្ពុជា",
-    "address_en": "JGGF+5R5, Preah Sihanouk, Cambodia",
+    "address_en": "Long Set beach koh rong long set beach Koh rong, Preah Sihanouk, Cambodia",
     "latitude": 10.6253842,
     "longitude": 103.5246058,
     "phone": "+855 71 371 4625",
@@ -3602,7 +3641,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 5,
     "review_count": 2,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
@@ -3633,14 +3672,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-taikang-hospital",
+    "id": "preah-sihanouk-ct-polyclinic-2",
     "name_km": "គ្លីនិក សេតេ",
-    "name_en": "Taikang Hospital",
-    "type": "hospital",
+    "name_en": "CT Polyclinic",
+    "type": "clinic",
     "province": "Preah Sihanouk",
     "district": "Preah Sihanouk",
     "address_km": "ក្រុងព្រះសីហនុ, កម្ពុជា",
-    "address_en": "69 Ekareach Street 100, Preah Sihanouk, Cambodia",
+    "address_en": "Preah Sihanouk, Cambodia",
     "latitude": 10.6272451,
     "longitude": 103.5223867,
     "phone": "+855 89 886 666",
@@ -3650,14 +3689,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 3,
     "review_count": 93,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   },
   {
-    "id": "preah-sihanouk-",
+    "id": "preah-sihanouk-fac-114146",
     "name_km": "Taikang Hospital",
     "name_en": "មន្ទីរពេទ្យ អន្តរជាតិ ឆាងហៃ 长海国际医院",
     "type": "hospital",
@@ -3681,14 +3720,14 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-ct-polyclinic",
+    "id": "preah-sihanouk-seara-clinic",
     "name_km": "Best Friend clinic",
-    "name_en": "CT Polyclinic",
-    "type": "hospital",
+    "name_en": "បន្ទប់ពិគ្រោះ និង ព្យាបាលជំងឺសុីរ៉ា SEARA Clinic",
+    "type": "clinic",
     "province": "Preah Sihanouk",
     "district": "Preah Sihanouk",
     "address_km": "Unnamed Road, Preah Sihanouk, កម្ពុជា",
-    "address_en": "Preah Sihanouk, Cambodia",
+    "address_en": "Street 810, Preah Sihanouk 180204, Cambodia",
     "latitude": 10.665863500000002,
     "longitude": 103.27279259999999,
     "phone": "+855 87 209 595",
@@ -3698,7 +3737,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     "rating": 4.9,
     "review_count": 85,
     "services": [
-      "ផ្នែកសង្គ្រោះបន្ទាន់ (Emergency Care)",
+      "ពិនិត្យជំងឺទូទៅ (Routine Consultation)",
       "ផ្នែកជំងឺទូទៅ (General Medicine)",
       "ថែទាំមាតា និងទារក (Maternal & Child Health)",
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
@@ -3729,7 +3768,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-taikang-hospital",
+    "id": "preah-sihanouk-taikang-hospital-2",
     "name_km": "Taikang hospital",
     "name_en": "Taikang hospital",
     "type": "hospital",
@@ -3777,7 +3816,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-",
+    "id": "preah-sihanouk-fac-114161",
     "name_km": "Clinic kampongDeva",
     "name_en": "西港协和医院",
     "type": "hospital",
@@ -3801,7 +3840,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-",
+    "id": "preah-sihanouk-fac-114147",
     "name_km": "西港第一人民医院",
     "name_en": "香港国际医院",
     "type": "hospital",
@@ -3825,7 +3864,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-",
+    "id": "preah-sihanouk-fac-114143",
     "name_km": "中柬和诚医院",
     "name_en": "中柬和诚医院",
     "type": "hospital",
@@ -3849,7 +3888,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-sonja-kill-memorial-",
+    "id": "preah-sihanouk-sonja-kill-memorial-hospital-skmh",
     "name_km": "西港国际中心医院",
     "name_en": "Sonja Kill Memorial Hospital (SKMH)",
     "type": "hospital",
@@ -3873,7 +3912,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-sihanoukville-health",
+    "id": "preah-sihanouk-sihanoukville-health-center",
     "name_km": "មណ្ឌលសុខភាពក្រុងព្រះសីហនុ",
     "name_en": "Sihanoukville Health Center",
     "type": "hospital",
@@ -3945,7 +3984,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-sihanoukville-cornin",
+    "id": "preah-sihanouk-sihanoukville-corning-general-24-hours-clinic-2",
     "name_km": "星汇门诊部គ្លីនិក Xinghui",
     "name_en": "Sihanoukville-Corning General 24 Hours Clinic",
     "type": "clinic",
@@ -3968,7 +4007,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-dr-professional-siha",
+    "id": "preah-sihanouk-dr-professional-sihanoukville",
     "name_km": "DR Professional Sihanoukville ក្រុងព្រះសីហនុ",
     "name_en": "DR Professional Sihanoukville ក្រុងព្រះសីហនុ",
     "type": "clinic",
@@ -4014,7 +4053,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk---clinic-rhac-sihano",
+    "id": "preah-sihanouk---clinic-rhac-sihanouk",
     "name_km": "prime medical Centre",
     "name_en": "គ្លីនិករ៉ាក់ ព្រះសីហនុ - Clinic RHAC Sihanouk",
     "type": "clinic",
@@ -4038,7 +4077,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-best-friend-clinic",
+    "id": "preah-sihanouk-best-friend-clinic-2",
     "name_km": "គ្លីនិករ៉ាក់ ព្រះសីហនុ - Clinic RHAC Sihanouk",
     "name_en": "Best Friend clinic",
     "type": "clinic",
@@ -4131,7 +4170,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-medical-cabinet-and-",
+    "id": "preah-sihanouk-medical-cabinet-and-laboratory",
     "name_km": "Ladies health clinic",
     "name_en": "Medical Cabinet and Laboratory (មេឌីកាល់ បន្ទប់ពិគ្រោះជម្ងឺ និង មន្ទីរពិសោធន៍)",
     "type": "clinic",
@@ -4179,7 +4218,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-miso-dental-clinic-s",
+    "id": "preah-sihanouk-miso-dental-clinic-sihanoukville",
     "name_km": "Miso Dental Clinic Sihanoukville",
     "name_en": "Miso Dental Clinic Sihanoukville",
     "type": "clinic",
@@ -4202,7 +4241,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-pao-socheat-dental-c",
+    "id": "preah-sihanouk-pao-socheat-dental-cabinet-former-knowns-as-atlantic-dental-clinic",
     "name_km": "ពេទ្យធ្មេញខ្មែរអាមេរិកកាំង",
     "name_en": "Pao Socheat Dental Cabinet បន្ទប់ពិគ្រោះ ព្យាបាលជំងឺមាត់ធ្មេញ ប៉ៅ សុជាតិ Former Knowns As (Atlantic Dental Clinic)",
     "type": "clinic",
@@ -4225,7 +4264,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "preah-sihanouk-",
+    "id": "preah-sihanouk-fac-114149",
     "name_km": "Raksmey Bayon Clinic",
     "name_en": "ពេទ្យធ្មេញខ្មែរអាមេរិកកាំង",
     "type": "clinic",
@@ -4272,10 +4311,10 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-kampong-cham-hospita",
+    "id": "kampong-cham-kampong-cham-hospital-2",
     "name_km": "មន្ទីរពេទ្យខេត្ត កំពង់ចាម",
     "name_en": "Kampong Cham Hospital",
-    "type": "referral_hospital",
+    "type": "hospital",
     "province": "Kampong Cham",
     "district": "Kampong Cham",
     "address_km": "XFV6+59Q, ក្រុងកំពង់ចាម, កម្ពុជា",
@@ -4296,7 +4335,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-clinic-115-kampong-c",
+    "id": "kampong-cham-clinic-115-kampong-cham",
     "name_km": "មន្ទីរ​សម្រាក​ព្យាបាល​115​កំពង់​ចាម",
     "name_en": "Clinic 115 Kampong Cham",
     "type": "hospital",
@@ -4320,7 +4359,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-khema-international-",
+    "id": "kampong-cham-khema-international-hospital",
     "name_km": "មន្ទីរសម្រាកព្យាបាល និង សម្ភព សុវណ្ណដេត",
     "name_en": "Khema International Hospital",
     "type": "hospital",
@@ -4366,7 +4405,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-cambodia-china-frien",
+    "id": "kampong-cham-cambodia-china-friendship-preah-kossamak-hospital",
     "name_km": "បន្ទប់ពិគ្រោះ និងព្យាបាលជំងឺ សិរីបុត្រ",
     "name_en": "Cambodia-China Friendship Preah Kossamak Hospital",
     "type": "hospital",
@@ -4414,7 +4453,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-1",
+    "id": "kampong-cham-1-2",
     "name_km": "បន្ទប់ពិគ្រោះជំងឺជីរោទ៍1",
     "name_en": "បន្ទប់ពិគ្រោះជំងឺជីរោទ៍1",
     "type": "hospital",
@@ -4438,7 +4477,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-",
+    "id": "kampong-cham-fac-116920",
     "name_km": "មន្ទីរពេទ្យបង្អែកស្រុកបរិបូណ៍ ខេត្តកំពង់ឆ្នាំង",
     "name_en": "មន្ទីរពេទ្យបង្អែកស្រុកបរិបូណ៍ ខេត្តកំពង់ឆ្នាំង",
     "type": "hospital",
@@ -4486,7 +4525,7 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
     ]
   },
   {
-    "id": "kampong-cham-",
+    "id": "kampong-cham-fac-117594",
     "name_km": "មន្ទីរ​ពេទ្យ​ខេត្ត​កំពង់ធំ",
     "name_en": "មន្ទីរ​ពេទ្យ​ខេត្ត​កំពង់ធំ",
     "type": "hospital",
@@ -4530,4 +4569,3 @@ export const FACILITY_TYPE_LABELS = {
   health_centre: { km: 'មណ្ឌលសុខភាព', en: 'Health Centre' },
   clinic: { km: 'គ្លីនិកឯកជន', en: 'Private Clinic' }
 };
-

@@ -110,6 +110,7 @@ async function main() {
   console.log('========================================================================\n');
 
   const facilityMap = new Map<string, HealthcareFacility>();
+  const usedIds = new Set<string>();
 
   for (const target of SEARCH_TARGETS) {
     console.log(`📍 Processing Province: ${target.province}`);
@@ -137,9 +138,14 @@ async function main() {
 
         // Deduplicate key by rounded coordinates
         const coordKey = `${lat.toFixed(4)},${lng.toFixed(4)}`;
-        if (facilityMap.has(coordKey)) continue;
-
-        const slugId = `${target.province.toLowerCase().replace(/\s+/g, '-')}-${generateSlug(nameEn).slice(0, 20)}`;
+        const baseSlug = generateSlug(nameEn) || `fac-${Math.abs(Math.round(lat * 1000 + lng * 1000))}`;
+        let slugId = `${target.province.toLowerCase().replace(/\s+/g, '-')}-${baseSlug}`;
+        let counter = 1;
+        while (usedIds.has(slugId)) {
+          counter++;
+          slugId = `${target.province.toLowerCase().replace(/\s+/g, '-')}-${baseSlug}-${counter}`;
+        }
+        usedIds.add(slugId);
 
         const isOpen24Hours =
           itemKm.regularOpeningHours?.weekdayDescriptions?.some((d: string) =>

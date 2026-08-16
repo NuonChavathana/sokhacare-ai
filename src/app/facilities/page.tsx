@@ -220,9 +220,9 @@ export default function FacilitiesPage() {
               {isKm ? 'មិនមានមណ្ឌលសុខភាពស្របតាមការស្វែងរកទេ' : 'No facilities matched your search.'}
             </div>
           ) : (
-            facilities.map((fac) => (
+            facilities.map((fac, idx) => (
               <div
-                key={fac.id}
+                key={`${fac.id}-${idx}`}
                 className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xs hover:border-teal-400 hover:shadow-md transition-all space-y-3"
               >
                 <div className="flex items-start justify-between gap-2">
