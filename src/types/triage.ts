@@ -35,6 +35,8 @@ export interface HealthcareFacility {
   emergency_available: boolean;
   services: string[];
   distance_km?: number;
+  rating?: number;
+  review_count?: number;
 }
 
 export interface ChatMessage {

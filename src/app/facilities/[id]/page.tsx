@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { CAMBODIA_FACILITIES, FACILITY_TYPE_LABELS } from '@/lib/data/facilities';
+import { getGoogleMapsDirectionsUrl } from '@/lib/location/geo-utils';
 import {
   MapPin,
   PhoneCall,
@@ -59,13 +60,23 @@ export default function FacilityDetailPage({ params }: { params: Promise<{ id: s
       <div className="bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden">
         <div className="bg-gradient-to-r from-teal-900 via-teal-800 to-emerald-900 text-white p-8 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <span className="text-xs font-extrabold px-3 py-1 rounded-full bg-white/20 text-white uppercase tracking-wider">
-              {FACILITY_TYPE_LABELS[facility.type]?.[isKm ? 'km' : 'en']}
-            </span>
-            <span className="text-xs bg-emerald-400 text-teal-950 font-bold px-3 py-1 rounded-full flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-teal-950 animate-pulse" />
-              {t('demoDataBadge')}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-extrabold px-3 py-1 rounded-full bg-white/20 text-white uppercase tracking-wider">
+                {FACILITY_TYPE_LABELS[facility.type]?.[isKm ? 'km' : 'en']}
+              </span>
+              {facility.rating && (
+                <span className="text-xs font-black text-amber-300 bg-amber-400/20 border border-amber-300/30 px-3 py-1 rounded-full flex items-center gap-1.5">
+                  <span>⭐ {facility.rating.toFixed(1)}</span>
+                  <span className="text-amber-100/80 font-semibold text-[11px]">({facility.review_count} {isKm ? 'ការវាយតម្លៃ' : 'reviews'})</span>
+                </span>
+              )}
+            </div>
+            {facility.emergency_available && (
+              <span className="text-xs bg-rose-500 text-white font-black px-3 py-1 rounded-full flex items-center gap-1.5 shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                🚨 24/7 Emergency Care
+              </span>
+            )}
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-extrabold">{isKm ? facility.name_km : facility.name_en}</h1>
@@ -161,10 +172,10 @@ export default function FacilityDetailPage({ params }: { params: Promise<{ id: s
             )}
 
             <a
-              href={`https://www.google.com/maps/dir/?api=1&destination=${facility.latitude},${facility.longitude}`}
+              href={getGoogleMapsDirectionsUrl(facility)}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-md transition-all"
+              className="w-full py-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-md transition-all cursor-pointer"
             >
               <Navigation className="w-5 h-5 text-emerald-400" />
               <span>{t('getDirections')} (Google Maps)</span>

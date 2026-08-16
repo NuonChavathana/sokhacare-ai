@@ -3,6 +3,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { HealthcareFacility } from '@/types/triage';
+import { getGoogleMapsDirectionsUrl } from '@/lib/location/geo-utils';
 import { AlertTriangle, PhoneCall, Navigation, MapPin, HeartPulse } from 'lucide-react';
 
 interface EmergencyAccessibilityCardProps {
@@ -89,10 +90,10 @@ export function EmergencyAccessibilityCard({
 
         {topFacility ? (
           <a
-            href={`https://www.google.com/maps/dir/?api=1&destination=${topFacility.latitude},${topFacility.longitude}`}
+            href={getGoogleMapsDirectionsUrl(topFacility)}
             target="_blank"
             rel="noopener noreferrer"
-            className="py-4 px-6 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-black text-lg shadow-2xl flex items-center justify-center gap-3 transition-transform active:scale-95 border-2 border-slate-700"
+            className="py-4 px-6 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-black text-lg shadow-2xl flex items-center justify-center gap-3 transition-transform active:scale-95 border-2 border-slate-700 cursor-pointer"
           >
             <Navigation className="w-7 h-7 text-emerald-400" />
             <span>{isKm ? '🗺️ យកផ្លូវទៅមន្ទីរពេទ្យ' : '🗺️ GET DIRECTIONS'}</span>

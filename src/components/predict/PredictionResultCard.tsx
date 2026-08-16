@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { HeartDiseasePredictionResult, RiskLevel } from '@/types/prediction';
 import { HealthcareFacility } from '@/types/triage';
+import { getGoogleMapsDirectionsUrl } from '@/lib/location/geo-utils';
 import { EmergencyAccessibilityCard } from './EmergencyAccessibilityCard';
 import { TextToSpeechButton } from '@/components/shared/TextToSpeechButton';
 import { generateHeartSpokenSummary } from '@/lib/speech/summary';
@@ -368,10 +369,10 @@ export function PredictionResultCard({
                       <span>{t('callNow')}</span>
                     </a>
                     <a
-                      href={`https://www.google.com/maps/dir/?api=1&destination=${facility.latitude},${facility.longitude}`}
+                      href={getGoogleMapsDirectionsUrl(facility)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold flex items-center justify-center gap-1 transition-all"
+                      className="py-2 px-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold flex items-center justify-center gap-1 transition-all cursor-pointer"
                       title="Directions"
                     >
                       <Navigation className="w-3.5 h-3.5" />

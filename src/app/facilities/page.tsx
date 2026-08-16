@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { HealthcareFacility, FacilityType } from '@/types/triage';
 import { CAMBODIA_FACILITIES, CAMBODIA_PROVINCES, FACILITY_TYPE_LABELS } from '@/lib/data/facilities';
-import { getNearbyFacilities } from '@/lib/location/geo-utils';
+import { getNearbyFacilities, getGoogleMapsDirectionsUrl } from '@/lib/location/geo-utils';
 import { FacilityMapWrapper } from '@/components/map/FacilityMapWrapper';
 import { MapPin, Search, PhoneCall, Navigation, Clock, ShieldCheck, Filter, Compass, ChevronRight, ArrowUpDown } from 'lucide-react';
 
@@ -227,9 +227,17 @@ export default function FacilitiesPage() {
               >
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-teal-100 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 uppercase tracking-wider mb-1 inline-block">
-                      {FACILITY_TYPE_LABELS[fac.type]?.[isKm ? 'km' : 'en']}
-                    </span>
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-teal-100 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 uppercase tracking-wider inline-block">
+                        {FACILITY_TYPE_LABELS[fac.type]?.[isKm ? 'km' : 'en']}
+                      </span>
+                      {fac.rating && (
+                        <span className="text-[11px] font-extrabold text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/40 px-2 py-0.5 rounded-full border border-amber-300/40 flex items-center gap-1">
+                          <span>⭐ {fac.rating.toFixed(1)}</span>
+                          <span className="text-slate-500 font-medium text-[10px]">({fac.review_count})</span>
+                        </span>
+                      )}
+                    </div>
                     <Link
                       href={`/facilities/${fac.id}`}
                       className="font-extrabold text-base text-slate-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors block"
@@ -281,10 +289,10 @@ export default function FacilitiesPage() {
                   )}
 
                   <a
-                    href={`https://www.google.com/maps/dir/?api=1&destination=${fac.latitude},${fac.longitude}`}
+                    href={getGoogleMapsDirectionsUrl(fac)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 text-center py-2 rounded-xl bg-slate-950 hover:bg-slate-850 text-white font-bold text-xs flex items-center justify-center gap-1 shadow-2xs transition-colors"
+                    className="flex-1 text-center py-2 rounded-xl bg-slate-950 hover:bg-slate-850 text-white font-bold text-xs flex items-center justify-center gap-1 shadow-2xs transition-colors cursor-pointer"
                   >
                     <Navigation className="w-3.5 h-3.5 text-emerald-400" />
                     <span>{t('getDirections')}</span>

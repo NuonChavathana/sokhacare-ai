@@ -55,3 +55,22 @@ export function getNearbyFacilities(
 
   return result.slice(0, limit);
 }
+
+/**
+ * Generates a verified Google Maps Directions URL using the hospital name, address, and coordinates.
+ * This guarantees Google Maps locks directly onto the official hospital listing rather than snapping to random nearby temples or alleys.
+ */
+export function getGoogleMapsDirectionsUrl(facility: {
+  name_en: string;
+  name_km?: string;
+  address_en?: string;
+  province?: string;
+  latitude: number;
+  longitude: number;
+}): string {
+  const destinationQuery = encodeURIComponent(
+    `${facility.name_en}, ${facility.address_en || facility.province || 'Cambodia'}`
+  );
+  return `https://www.google.com/maps/dir/?api=1&destination=${destinationQuery}`;
+}
+

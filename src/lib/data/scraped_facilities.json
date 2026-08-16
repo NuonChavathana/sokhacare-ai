@@ -1,6 +1,4 @@
-import { HealthcareFacility } from '@/types/triage';
-
-export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
+[
   {
     "id": "phnom-penh-intercare-hospital--",
     "name_km": "Intercare Hospital - Main Entrance",
@@ -4509,25 +4507,4 @@ export const CAMBODIA_FACILITIES: HealthcareFacility[] = [
       "ចាក់វ៉ាក់សាំងការពារជំងឺ (Immunization)"
     ]
   }
-];
-
-export const CAMBODIA_PROVINCES = [
-  { value: 'All', label_km: 'គ្រប់ខេត្ត/រាជធានី', label_en: 'All Provinces' },
-  { value: 'Phnom Penh', label_km: 'រាជធានីភ្នំពេញ', label_en: 'Phnom Penh' },
-  { value: 'Siem Reap', label_km: 'ខេត្តសៀមរាប', label_en: 'Siem Reap' },
-  { value: 'Battambang', label_km: 'ខេត្តបាត់ដំបង', label_en: 'Battambang' },
-  { value: 'Kampot', label_km: 'ខេត្តកំពត', label_en: 'Kampot' },
-  { value: 'Preah Sihanouk', label_km: 'ខេត្តព្រះសីហនុ', label_en: 'Preah Sihanouk' },
-  { value: 'Kampong Cham', label_km: 'ខេត្តកំពង់ចាម', label_en: 'Kampong Cham' },
-  { value: 'Kandal', label_km: 'ខេត្តកណ្តាល', label_en: 'Kandal' },
-  { value: 'Takeo', label_km: 'ខេត្តតាកែវ', label_en: 'Takeo' },
-  { value: 'Banteay Meanchey', label_km: 'ខេត្តបន្ទាយមានជ័យ', label_en: 'Banteay Meanchey' }
-];
-
-export const FACILITY_TYPE_LABELS = {
-  hospital: { km: 'មន្ទីរពេទ្យជាតិ / ឯកទេស', en: 'National / Specialized Hospital' },
-  referral_hospital: { km: 'មន្ទីរពេទ្យបង្អែក', en: 'Referral Hospital' },
-  health_centre: { km: 'មណ្ឌលសុខភាព', en: 'Health Centre' },
-  clinic: { km: 'គ្លីនិកឯកជន', en: 'Private Clinic' }
-};
-
+]

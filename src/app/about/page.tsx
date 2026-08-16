@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div>↓</div>
           <div>Structured JSON Output (EMERGENCY / URGENT / ROUTINE / SELF-CARE)</div>
           <div>↓</div>
-          <div>Facility Matcher & OpenStreetMap Navigation (Leaflet Distance Calculation)</div>
+          <div>Facility Matcher & Live Google Maps Navigation (Geo-Distance Calculation)</div>
         </div>
       </div>
     </div>

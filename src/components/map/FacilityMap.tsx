@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import { HealthcareFacility } from '@/types/triage';
 import { useLanguage } from '@/context/LanguageContext';
+import { getGoogleMapsDirectionsUrl } from '@/lib/location/geo-utils';
 import { PhoneCall, Navigation, Clock, ShieldCheck, MapPin } from 'lucide-react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -111,7 +112,7 @@ export default function FacilityMap({
                 )}
 
                 <a
-                  href={`https://www.google.com/maps/dir/?api=1&destination=${fac.latitude},${fac.longitude}`}
+                  href={getGoogleMapsDirectionsUrl(fac)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center py-1.5 px-3 rounded-lg bg-slate-900 text-white font-bold text-xs shadow-2xs hover:bg-slate-800 transition-colors"
