@@ -60,7 +60,7 @@ export default function RoadmapPage() {
           {isKm ? 'ផែនការអភិវឌ្ឍន៍ SokhaCare AI' : 'SokhaCare AI Product Roadmap'}
         </h1>
         <p className="text-sm text-teal-100/90 font-medium">
-          Strategic development phases from hackathon MVP to national digital health platform.
+          Strategic development phases from MVP to national digital health platform.
         </p>
       </div>
 

@@ -12,7 +12,7 @@ export default function FamilyPage() {
   const [role, setRole] = useState<PatientRole>('myself');
 
   const handleStartTriage = () => {
-    router.push(`/triage?role=${role}`);
+    router.push(`/predict?role=${role}`);
   };
 
   return (
@@ -30,12 +30,12 @@ export default function FamilyPage() {
       </div>
 
       {/* Role Selection Card */}
-      <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-8">
+      <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-8">
         <FamilySelector selectedRole={role} onSelectRole={setRole} />
 
-        <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="text-xs text-slate-500 flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-teal-600 shrink-0" />
+        <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-teal-600 dark:text-teal-400 shrink-0" />
             <span>
               {language === 'km'
                 ? 'ព័ត៌មានគ្រួសារមិនត្រូវបានរក្សាទុកជាឯកសារផ្ទាល់ខ្លួនឡើយ'

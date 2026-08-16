@@ -54,29 +54,29 @@ export default function PrivacyPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
       {/* Header Banner */}
-      <div className="bg-rose-50 border-2 border-rose-300 rounded-3xl p-8 space-y-4">
+      <div className="bg-rose-50 dark:bg-rose-950/40 border-2 border-rose-300 dark:border-rose-800 rounded-3xl p-8 space-y-4">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-2xl bg-rose-600 text-white flex items-center justify-center">
             <ShieldAlert className="w-7 h-7" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-rose-950">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-rose-950 dark:text-rose-200">
               {t('privacyTitle')}
             </h1>
-            <p className="text-xs text-rose-800 font-semibold mt-0.5">
+            <p className="text-xs text-rose-800 dark:text-rose-300 font-semibold mt-0.5">
               SokhaCare AI Ethical Safety & Privacy Protocols
             </p>
           </div>
         </div>
-        <p className="text-sm text-rose-900 leading-relaxed font-medium">
+        <p className="text-sm text-rose-900 dark:text-rose-200 leading-relaxed font-medium">
           {t('disclaimerText')}
         </p>
       </div>
 
       {/* 10 Safety Principles List */}
-      <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
-        <h2 className="text-xl font-extrabold text-slate-900 flex items-center gap-2">
-          <ShieldCheck className="w-6 h-6 text-teal-600" />
+      <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+        <h2 className="text-xl font-extrabold text-slate-900 dark:text-white flex items-center gap-2">
+          <ShieldCheck className="w-6 h-6 text-teal-600 dark:text-teal-400" />
           <span>{t('safetyRulesTitle')}</span>
         </h2>
 
@@ -84,10 +84,10 @@ export default function PrivacyPage() {
           {safetyRules.map((rule, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-start gap-3"
+              className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 flex items-start gap-3"
             >
-              <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
-              <div className="text-sm font-semibold text-slate-800">
+              <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+              <div className="text-sm font-semibold text-slate-800 dark:text-slate-200">
                 {isKm ? rule.km : rule.en}
               </div>
             </div>

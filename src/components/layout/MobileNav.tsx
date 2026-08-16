@@ -4,23 +4,27 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
-import { Home, Sparkles, MapPin, History, Users } from 'lucide-react';
+import { HeartPulse, Bot, Sparkles, MapPin, History, Users, BarChart3 } from 'lucide-react';
 
 export function MobileNav() {
   const pathname = usePathname();
   const { t } = useLanguage();
 
   const links = [
-    { href: '/', label: t('navHome'), icon: Home },
-    { href: '/triage', label: t('navTriage'), icon: Sparkles },
+    { href: '/', label: t('navHome'), icon: HeartPulse },
+    { href: '/chat', label: t('navChat'), icon: Bot },
+    { href: '/predict', label: t('navPredict'), icon: Sparkles },
     { href: '/family', label: t('navFamily'), icon: Users },
     { href: '/facilities', label: t('navFacilities'), icon: MapPin },
     { href: '/history', label: t('navHistory'), icon: History }
   ];
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-t border-slate-200/80 px-1 py-1.5 shadow-2xl pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
-      <div className="flex justify-around items-center max-w-md mx-auto">
+    <nav
+      className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-xl border-t border-teal-900/60 px-2 py-1.5 shadow-2xl shadow-black pb-[calc(0.5rem+env(safe-area-inset-bottom))]"
+      aria-label="Mobile Bottom Navigation"
+    >
+      <div className="flex justify-around items-center max-w-lg mx-auto">
         {links.map((link) => {
           const Icon = link.icon;
           const isActive = pathname === link.href;
@@ -28,14 +32,19 @@ export function MobileNav() {
             <Link
               key={link.href}
               href={link.href}
-              className={`flex flex-col items-center py-1 px-3 rounded-2xl transition-all active:scale-95 ${
+              className={`flex flex-col items-center py-1.5 px-2 rounded-2xl transition-all duration-150 motion-reduce:transition-none active:scale-95 min-w-[52px] ${
                 isActive
-                  ? 'bg-teal-50 text-teal-800 font-extrabold shadow-2xs'
-                  : 'text-slate-500 hover:text-teal-700 font-medium'
+                  ? 'bg-teal-500/20 text-emerald-300 font-black border border-teal-500/40 shadow-xs shadow-teal-500/20'
+                  : 'text-slate-400 hover:text-slate-200 font-medium'
               }`}
+              aria-current={isActive ? 'page' : undefined}
             >
-              <Icon className={`w-5 h-5 ${isActive ? 'text-teal-600' : 'text-slate-400'}`} />
-              <span className="text-[10px] leading-tight mt-0.5 font-bold tracking-tight">
+              <Icon
+                className={`w-4 h-4 transition-colors ${
+                  isActive ? 'text-emerald-400' : 'text-slate-400'
+                }`}
+              />
+              <span className="text-[10px] leading-tight mt-1 font-bold tracking-tight text-center truncate max-w-[56px]">
                 {link.label}
               </span>
             </Link>

@@ -67,3 +67,17 @@ model HealthcareFacility {
   services           String[]
   createdAt          DateTime     @default(now())
 }
+
+model PredictionRecord {
+  id          String   @id @default(uuid())
+  sessionId   String?
+  userId      String?
+  mode        String   @default("patient_heart")
+  features    Json?
+  result      Json?
+  probability Float?
+  riskLevel   String?
+  language    String   @default("km")
+  createdAt   DateTime @default(now())
+}
+

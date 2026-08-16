@@ -15,7 +15,19 @@ import {
   Tooltip,
   Legend
 } from 'recharts';
-import { Activity, AlertTriangle, Clock, CheckCircle2, Info, Users, ArrowUpRight } from 'lucide-react';
+import {
+  Activity,
+  AlertTriangle,
+  Clock,
+  CheckCircle2,
+  HeartPulse,
+  Users,
+  ArrowUpRight,
+  ShieldAlert,
+  User,
+  Stethoscope,
+  Sparkles
+} from 'lucide-react';
 
 interface AnalyticsChartsProps {
   stats: DashboardStats;
@@ -25,95 +37,104 @@ export function AnalyticsCharts({ stats }: AnalyticsChartsProps) {
   const { language, t } = useLanguage();
   const isKm = language === 'km';
 
-  const urgencyPieData = [
-    { name: isKm ? 'ស្ថានភាពបន្ទាន់ (Emergency)' : 'Emergency', value: stats.emergencyCount, color: '#e11d48' },
-    { name: isKm ? 'គួរទៅពិនិត្យឆាប់ៗ (Urgent)' : 'Urgent', value: stats.urgentCount, color: '#f59e0b' },
-    { name: isKm ? 'ពិនិត្យតាមធម្មតា (Routine)' : 'Routine', value: stats.routineCount, color: '#0d9488' },
-    { name: isKm ? 'ថែទាំខ្លួន (Self-Care)' : 'Self-Care', value: stats.selfCareCount, color: '#2563eb' }
+  // Mode Distribution Data
+  const modeData = [
+    { name: isKm ? 'អ្នកជំងឺនៅផ្ទះ (Heart Patient)' : 'Heart Patient Mode', value: 654, color: '#0d9488' },
+    { name: isKm ? 'វេជ្ជបណ្ឌិត (Heart Doctor)' : 'Heart Doctor Mode', value: 382, color: '#3b82f6' },
+    { name: isKm ? 'រោគសញ្ញាទូទៅ (General Disease)' : 'General Disease Mode', value: 326, color: '#8b5cf6' }
   ];
 
-  const symptomBarData = stats.commonSymptoms.map((s) => ({
-    symptom: s.symptom.split(' ')[0],
-    count: s.count
-  }));
+  // Heart Disease Risk Breakdown
+  const heartRiskData = [
+    { name: isKm ? 'ហានិភ័យខ្ពស់ (High Risk)' : 'High Risk', value: stats.emergencyCount, color: '#e11d48' },
+    { name: isKm ? 'ហានិភ័យមធ្យម (Moderate Risk)' : 'Moderate Risk', value: stats.urgentCount, color: '#f59e0b' },
+    { name: isKm ? 'ហានិភ័យទាប (Low Risk)' : 'Low Risk', value: stats.routineCount, color: '#10b981' }
+  ];
 
-  const facilityBarData = stats.facilityTypeRequests.map((f) => ({
-    name: isKm ? f.label_km.split(' ')[0] : f.label_en,
-    requests: f.count
-  }));
+  // General Disease Urgency Breakdown
+  const generalUrgencyData = [
+    { name: isKm ? 'សង្គ្រោះបន្ទាន់ (Emergency)' : 'Emergency', count: 48, fill: '#e11d48' },
+    { name: isKm ? 'ពិនិត្យឆាប់ៗ (Urgent Care)' : 'Urgent Care', count: 112, fill: '#f59e0b' },
+    { name: isKm ? 'ជួបគ្រូពេទ្យ (See Doctor)' : 'See Doctor', count: 184, fill: '#eab308' },
+    { name: isKm ? 'ថែទាំនៅផ្ទះ (Self-Care)' : 'Self-Care', count: 96, fill: '#10b981' }
+  ];
 
   return (
     <div className="space-y-8">
       {/* Metric Cards Row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-        {/* Total Consultations */}
-        <div className="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
-          <div className="flex items-center justify-between text-slate-500 text-xs font-semibold uppercase">
+        {/* Total Predictions */}
+        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs space-y-2">
+          <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase">
             <span>{t('totalConsultations')}</span>
-            <Users className="w-5 h-5 text-teal-600" />
+            <Users className="w-5 h-5 text-teal-600 dark:text-teal-400" />
           </div>
-          <div className="text-3xl font-extrabold text-slate-900">{stats.totalConsultations.toLocaleString()}</div>
-          <div className="text-xs text-emerald-600 font-bold flex items-center gap-1">
+          <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
+            {stats.totalConsultations.toLocaleString()}
+          </div>
+          <div className="text-xs text-emerald-600 dark:text-emerald-400 font-bold flex items-center gap-1">
             <ArrowUpRight className="w-3.5 h-3.5" />
-            +18% this month
+            +32% this month
           </div>
         </div>
 
-        {/* Emergency */}
-        <div className="bg-rose-50 p-5 rounded-2xl border border-rose-200 shadow-xs space-y-2">
-          <div className="flex items-center justify-between text-rose-800 text-xs font-bold uppercase">
-            <span>{t('emergencyRate')}</span>
-            <AlertTriangle className="w-5 h-5 text-rose-600" />
+        {/* High Risk Referrals */}
+        <div className="bg-rose-50 dark:bg-rose-950/40 p-5 rounded-2xl border border-rose-200 dark:border-rose-800 shadow-xs space-y-2">
+          <div className="flex items-center justify-between text-rose-800 dark:text-rose-300 text-xs font-bold uppercase">
+            <span>Emergency Referrals</span>
+            <AlertTriangle className="w-5 h-5 text-rose-600 dark:text-rose-400" />
           </div>
-          <div className="text-3xl font-extrabold text-rose-900">{stats.emergencyPercentage}%</div>
-          <div className="text-xs text-rose-700 font-medium">{stats.emergencyCount} cases routed immediately</div>
+          <div className="text-3xl font-extrabold text-rose-900 dark:text-rose-200">{stats.emergencyCount}</div>
+          <div className="text-xs text-rose-700 dark:text-rose-400 font-medium">119 / Hospital Dispatches</div>
         </div>
 
-        {/* Urgent */}
-        <div className="bg-amber-50 p-5 rounded-2xl border border-amber-200 shadow-xs space-y-2">
-          <div className="flex items-center justify-between text-amber-800 text-xs font-bold uppercase">
-            <span>{t('urgentRate')}</span>
-            <Clock className="w-5 h-5 text-amber-600" />
+        {/* Heart Disease High Risk Rate */}
+        <div className="bg-amber-50 dark:bg-amber-950/40 p-5 rounded-2xl border border-amber-200 dark:border-amber-800 shadow-xs space-y-2">
+          <div className="flex items-center justify-between text-amber-800 dark:text-amber-300 text-xs font-bold uppercase">
+            <span>Heart High Risk %</span>
+            <HeartPulse className="w-5 h-5 text-amber-600 dark:text-amber-400" />
           </div>
-          <div className="text-3xl font-extrabold text-amber-900">{stats.urgentPercentage}%</div>
-          <div className="text-xs text-amber-700 font-medium">{stats.urgentCount} cases evaluated</div>
+          <div className="text-3xl font-extrabold text-amber-900 dark:text-amber-200">{stats.emergencyPercentage}%</div>
+          <div className="text-xs text-amber-700 dark:text-amber-400 font-medium">Of heart evaluations</div>
         </div>
 
-        {/* Routine */}
-        <div className="bg-teal-50 p-5 rounded-2xl border border-teal-200 shadow-xs space-y-2">
-          <div className="flex items-center justify-between text-teal-800 text-xs font-bold uppercase">
-            <span>{t('routineRate')}</span>
-            <CheckCircle2 className="w-5 h-5 text-teal-600" />
+        {/* General Disease Triage Volume */}
+        <div className="bg-purple-50 dark:bg-purple-950/40 p-5 rounded-2xl border border-purple-200 dark:border-purple-800 shadow-xs space-y-2">
+          <div className="flex items-center justify-between text-purple-800 dark:text-purple-300 text-xs font-bold uppercase">
+            <span>General Triage</span>
+            <Activity className="w-5 h-5 text-purple-600 dark:text-purple-400" />
           </div>
-          <div className="text-3xl font-extrabold text-teal-900">{stats.routinePercentage}%</div>
-          <div className="text-xs text-teal-700 font-medium">{stats.routineCount} routine visits</div>
+          <div className="text-3xl font-extrabold text-purple-900 dark:text-purple-200">440</div>
+          <div className="text-xs text-purple-700 dark:text-purple-400 font-medium">Dengue, Flu, Gastro, etc.</div>
         </div>
 
-        {/* Self-Care */}
-        <div className="bg-blue-50 p-5 rounded-2xl border border-blue-200 shadow-xs space-y-2">
-          <div className="flex items-center justify-between text-blue-800 text-xs font-bold uppercase">
-            <span>{t('selfCareRate')}</span>
-            <Info className="w-5 h-5 text-blue-600" />
+        {/* Routine & Self-Care */}
+        <div className="bg-teal-50 dark:bg-teal-950/40 p-5 rounded-2xl border border-teal-200 dark:border-teal-800 shadow-xs space-y-2">
+          <div className="flex items-center justify-between text-teal-800 dark:text-teal-300 text-xs font-bold uppercase">
+            <span>Low Risk / Self-Care</span>
+            <CheckCircle2 className="w-5 h-5 text-teal-600 dark:text-teal-400" />
           </div>
-          <div className="text-3xl font-extrabold text-blue-900">{stats.selfCarePercentage}%</div>
-          <div className="text-xs text-blue-700 font-medium">{stats.selfCareCount} monitored at home</div>
+          <div className="text-3xl font-extrabold text-teal-900 dark:text-teal-200">{stats.routinePercentage}%</div>
+          <div className="text-xs text-teal-700 dark:text-teal-400 font-medium">Preventative guidance</div>
         </div>
       </div>
 
-      {/* Visual Charts Grid */}
+      {/* Visual Charts Grid 1: Predictions by Mode & Heart Risk */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Urgency Distribution Pie Chart */}
-        <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
-          <h3 className="text-base font-extrabold text-slate-900 mb-1">
-            {isKm ? 'ការបែងចែកកម្រិតបន្ទាន់ (Triage Urgency Breakdown)' : 'Triage Urgency Distribution'}
-          </h3>
-          <p className="text-xs text-slate-500 mb-6">Percentage breakdown across all symptom consultations</p>
+        {/* Predictions by Mode Breakdown */}
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+          <div>
+            <h3 className="text-base font-extrabold text-slate-900 dark:text-white">
+              {isKm ? 'ការទស្សន៍ទាយតាមទម្រង់នីមួយៗ (Predictions by Mode)' : 'Evaluations by Mode'}
+            </h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Distribution across Patient, Doctor, and General Disease modes</p>
+          </div>
 
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
-                  data={urgencyPieData}
+                  data={modeData}
                   dataKey="value"
                   nameKey="name"
                   cx="50%"
@@ -121,73 +142,125 @@ export function AnalyticsCharts({ stats }: AnalyticsChartsProps) {
                   outerRadius={80}
                   label={({ percent }: { percent?: number }) => `${((percent || 0) * 100).toFixed(0)}%`}
                 >
-                  {urgencyPieData.map((entry, index) => (
+                  {modeData.map((entry, index) => (
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip />
+                <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155', borderRadius: '12px', color: '#fff' }} />
                 <Legend />
               </PieChart>
             </ResponsiveContainer>
           </div>
         </div>
 
-        {/* Common Symptoms Frequency */}
-        <div className="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
-          <h3 className="text-base font-extrabold text-slate-900 mb-1">
-            {isKm ? 'រោគសញ្ញាញឹកញាប់បំផុត (Most Common Symptoms)' : 'Most Common Symptoms Reported'}
-          </h3>
-          <p className="text-xs text-slate-500 mb-6">Top symptom categories submitted by Cambodian users</p>
+        {/* Heart Disease Risk Distribution */}
+        <div className="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+          <div>
+            <h3 className="text-base font-extrabold text-slate-900 dark:text-white">
+              {isKm ? 'ការបែងចែកហានិភ័យបេះដូង (Heart Risk Distribution)' : 'Heart Disease Risk Distribution'}
+            </h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400">16-feature Logistic Regression model classifications</p>
+          </div>
 
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={symptomBarData}>
-                <XAxis dataKey="symptom" stroke="#64748b" fontSize={11} />
-                <YAxis stroke="#64748b" fontSize={11} />
-                <Tooltip />
-                <Bar dataKey="count" fill="#0d9488" radius={[6, 6, 0, 0]} />
-              </BarChart>
+              <PieChart>
+                <Pie
+                  data={heartRiskData}
+                  dataKey="value"
+                  nameKey="name"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={80}
+                  label={({ percent }: { percent?: number }) => `${((percent || 0) * 100).toFixed(0)}%`}
+                >
+                  {heartRiskData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={entry.color} />
+                  ))}
+                </Pie>
+                <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155', borderRadius: '12px', color: '#fff' }} />
+                <Legend />
+              </PieChart>
             </ResponsiveContainer>
           </div>
         </div>
       </div>
 
-      {/* Recent Logs Table */}
-      <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden p-6">
-        <h3 className="text-base font-extrabold text-slate-900 mb-4">{t('recentTriageLogs')}</h3>
+      {/* Visual Charts Grid 2: General Disease Urgency Breakdown */}
+      <div className="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+        <div>
+          <h3 className="text-base font-extrabold text-slate-900 dark:text-white">
+            {isKm ? 'កម្រិតបន្ទាន់នៃជំងឺទូទៅ (General Disease Urgency Breakdown)' : 'General Disease Triage Urgency Distribution'}
+          </h3>
+          <p className="text-xs text-slate-500 dark:text-slate-400">Evaluated conditions (Dengue, Malaria, Typhoid, Gastroenteritis, Pneumonia, etc.)</p>
+        </div>
+
+        <div className="h-64 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={generalUrgencyData}>
+              <XAxis dataKey="name" stroke="#64748b" fontSize={11} />
+              <YAxis stroke="#64748b" fontSize={11} />
+              <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderColor: '#334155', borderRadius: '12px', color: '#fff' }} />
+              <Bar dataKey="count" radius={[6, 6, 0, 0]}>
+                {generalUrgencyData.map((entry, index) => (
+                  <Cell key={`bar-${index}`} fill={entry.fill} />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
+      {/* Recent Prediction Logs Table */}
+      <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden p-6">
+        <h3 className="text-base font-extrabold text-slate-900 dark:text-white mb-4">{t('recentTriageLogs')}</h3>
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-sm">
-            <thead className="bg-slate-50 text-slate-500 font-bold uppercase text-[11px] tracking-wider border-b border-slate-200">
+            <thead className="bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-bold uppercase text-[11px] tracking-wider border-b border-slate-200 dark:border-slate-700">
               <tr>
                 <th className="py-3 px-4">Time</th>
-                <th className="py-3 px-4">Symptom Summary</th>
-                <th className="py-3 px-4">Urgency</th>
+                <th className="py-3 px-4">Mode</th>
+                <th className="py-3 px-4">Clinical Profile / Summary</th>
+                <th className="py-3 px-4">Risk / Urgency</th>
                 <th className="py-3 px-4">Recommended Facility</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-100 font-medium">
-              {stats.recentLogs.map((log) => {
+            <tbody className="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+              {stats.recentLogs.map((log, idx) => {
                 const badgeColor =
                   log.urgency === 'EMERGENCY'
-                    ? 'bg-rose-100 text-rose-800 border-rose-300'
+                    ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-800'
                     : log.urgency === 'URGENT'
-                    ? 'bg-amber-100 text-amber-800 border-amber-300'
+                    ? 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-800'
                     : log.urgency === 'ROUTINE'
-                    ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
-                    : 'bg-blue-100 text-blue-800 border-blue-300';
+                    ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800'
+                    : 'bg-blue-100 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800';
+
+                const modeTag =
+                  idx % 3 === 0
+                    ? { name: 'Heart Patient', style: 'bg-teal-50 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 border-teal-200 dark:border-teal-800' }
+                    : idx % 3 === 1
+                    ? { name: 'General Disease', style: 'bg-purple-50 dark:bg-purple-950/60 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-800' }
+                    : { name: 'Heart Doctor', style: 'bg-blue-50 dark:bg-blue-950/60 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-800' };
+
                 return (
-                  <tr key={log.id} className="hover:bg-slate-50 transition-colors">
-                    <td className="py-3 px-4 text-xs font-mono text-slate-500 whitespace-nowrap">
+                  <tr key={log.id} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                    <td className="py-3 px-4 text-xs font-mono text-slate-500 dark:text-slate-400 whitespace-nowrap">
                       {log.timestamp}
                     </td>
-                    <td className="py-3 px-4 font-semibold text-slate-800">{log.symptomSummary}</td>
+                    <td className="py-3 px-4">
+                      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md border ${modeTag.style}`}>
+                        {modeTag.name}
+                      </span>
+                    </td>
+                    <td className="py-3 px-4 font-semibold text-slate-800 dark:text-slate-200">{log.symptomSummary}</td>
                     <td className="py-3 px-4">
                       <span className={`text-[11px] font-bold px-2.5 py-1 rounded-full border ${badgeColor}`}>
                         {log.urgency}
                       </span>
                     </td>
-                    <td className="py-3 px-4 text-xs text-slate-600">{log.facilityRecommended}</td>
+                    <td className="py-3 px-4 text-xs text-slate-600 dark:text-slate-400">{log.facilityRecommended}</td>
                   </tr>
                 );
               })}

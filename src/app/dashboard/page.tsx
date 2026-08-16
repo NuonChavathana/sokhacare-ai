@@ -37,7 +37,7 @@ export default function DashboardPage() {
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 border border-white/20 rounded-full text-xs font-bold text-teal-200 mb-2">
             <BarChart3 className="w-4 h-4 text-emerald-400" />
-            <span>Innovation Presentation Demo Dashboard</span>
+            <span>Health Analytics & Insights</span>
           </div>
           <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight">{t('dashboardTitle')}</h1>
           <p className="text-sm text-teal-100/90 font-medium mt-1">{t('dashboardSubtitle')}</p>

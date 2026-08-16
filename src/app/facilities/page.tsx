@@ -100,13 +100,13 @@ export default function FacilitiesPage() {
 
       {/* Location Permission Modal / Banner (Requirement 43) */}
       {showLocationPrompt && !userLocation.granted && (
-        <div className="bg-teal-50 border-2 border-teal-300 rounded-3xl p-5 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div className="bg-teal-50 dark:bg-teal-950/40 border-2 border-teal-300 dark:border-teal-800 rounded-3xl p-5 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="space-y-1">
-            <h3 className="font-extrabold text-base text-teal-950 flex items-center gap-2">
-              <Compass className="w-5 h-5 text-teal-700" />
+            <h3 className="font-extrabold text-base text-teal-950 dark:text-teal-200 flex items-center gap-2">
+              <Compass className="w-5 h-5 text-teal-700 dark:text-teal-400" />
               <span>{t('locationPromptTitle')}</span>
             </h3>
-            <p className="text-xs text-teal-900 font-medium">
+            <p className="text-xs text-teal-900 dark:text-teal-300 font-medium">
               {isKm
                 ? 'អនុញ្ញាតទីតាំងដើម្បីស្វែងរកមន្ទីរពេទ្យ និងមណ្ឌលសុខភាពដែលនៅជិតលោកអ្នកបំផុត'
                 : 'Allow location access to automatically find the nearest healthcare facilities.'}
@@ -122,7 +122,7 @@ export default function FacilitiesPage() {
             </button>
             <button
               onClick={() => setShowLocationPrompt(false)}
-              className="px-4 py-2 rounded-xl bg-white border border-slate-300 text-slate-700 font-bold text-xs"
+              className="px-4 py-2 rounded-xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-bold text-xs"
             >
               {t('manualLocation')}
             </button>
@@ -131,13 +131,13 @@ export default function FacilitiesPage() {
       )}
 
       {locationStatus && (
-        <div className="p-3 bg-amber-50 border border-amber-200 text-amber-900 rounded-xl text-xs font-semibold flex items-center gap-2">
+        <div className="p-3 bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800 text-amber-900 dark:text-amber-200 rounded-xl text-xs font-semibold flex items-center gap-2">
           <span>ℹ️ {locationStatus}</span>
         </div>
       )}
 
       {/* Search & Filters Bar */}
-      <div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+      <div className="bg-white dark:bg-slate-900 p-5 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Search Field */}
           <div className="relative">
@@ -147,7 +147,7 @@ export default function FacilitiesPage() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={isKm ? 'ស្វែងរកឈ្មោះមន្ទីរពេទ្យ...' : 'Search facility name...'}
-              className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 font-medium"
+              className="w-full pl-10 pr-4 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white rounded-xl text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 font-medium"
             />
           </div>
 
@@ -156,7 +156,7 @@ export default function FacilitiesPage() {
             <select
               value={selectedProvince}
               onChange={(e) => setSelectedProvince(e.target.value)}
-              className="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold outline-none focus:border-teal-500"
+              className="w-full p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white rounded-xl text-sm font-semibold outline-none focus:border-teal-500"
             >
               {CAMBODIA_PROVINCES.map((prov) => (
                 <option key={prov.value} value={prov.value}>
@@ -171,7 +171,7 @@ export default function FacilitiesPage() {
             <select
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
-              className="w-full p-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-semibold outline-none focus:border-teal-500"
+              className="w-full p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white rounded-xl text-sm font-semibold outline-none focus:border-teal-500"
             >
               <option value="all">{t('allTypes')}</option>
               <option value="hospital">{isKm ? 'មន្ទីរពេទ្យធំ' : 'Hospital'}</option>
@@ -187,7 +187,7 @@ export default function FacilitiesPage() {
             className={`px-4 py-2.5 rounded-xl border text-xs font-extrabold flex items-center justify-center gap-2 transition-all ${
               sortByDist
                 ? 'bg-teal-700 text-white border-teal-700 shadow-2xs'
-                : 'bg-slate-50 text-slate-700 border-slate-300 hover:bg-slate-100'
+                : 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700/60'
             }`}
           >
             <ArrowUpDown className="w-4 h-4" />
@@ -210,29 +210,29 @@ export default function FacilitiesPage() {
         {/* Facility Cards Directory Column */}
         <div className="lg:col-span-5 space-y-4 max-h-[550px] overflow-y-auto pr-2">
           <div className="flex items-center justify-between">
-            <span className="text-xs font-extrabold text-slate-600 uppercase tracking-wider">
+            <span className="text-xs font-extrabold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
               {isKm ? `រកឃើញមណ្ឌលសុខភាពចំនួន (${facilities.length})` : `Facilities Directory (${facilities.length})`}
             </span>
           </div>
 
           {facilities.length === 0 ? (
-            <div className="p-8 bg-white rounded-2xl border border-slate-200 text-center text-slate-500 text-sm font-medium">
+            <div className="p-8 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-sm font-medium">
               {isKm ? 'មិនមានមណ្ឌលសុខភាពស្របតាមការស្វែងរកទេ' : 'No facilities matched your search.'}
             </div>
           ) : (
             facilities.map((fac) => (
               <div
                 key={fac.id}
-                className="bg-white p-5 rounded-2xl border border-slate-200 shadow-2xs hover:border-teal-400 hover:shadow-md transition-all space-y-3"
+                className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-2xs hover:border-teal-400 hover:shadow-md transition-all space-y-3"
               >
                 <div className="flex items-start justify-between gap-2">
                   <div>
-                    <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-teal-100 text-teal-800 uppercase tracking-wider mb-1 inline-block">
+                    <span className="text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-teal-100 dark:bg-teal-950/60 text-teal-800 dark:text-teal-300 uppercase tracking-wider mb-1 inline-block">
                       {FACILITY_TYPE_LABELS[fac.type]?.[isKm ? 'km' : 'en']}
                     </span>
                     <Link
                       href={`/facilities/${fac.id}`}
-                      className="font-extrabold text-base text-slate-900 hover:text-teal-700 transition-colors block"
+                      className="font-extrabold text-base text-slate-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors block"
                     >
                       {isKm ? fac.name_km : fac.name_en}
                     </Link>
