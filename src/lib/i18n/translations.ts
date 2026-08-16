@@ -30,8 +30,8 @@ export const TRANSLATIONS = {
     chatEmergencyNote: 'ក្នុងករណីសង្គ្រោះបន្ទាន់ធ្ងន់ធ្ងរ សូមទូរស័ព្ទទៅកាន់ 119 ឬ 115 ភ្លាមៗ',
 
     // Hero text
-    heroTitleKm: 'សុខភាពបេះដូងរបស់អ្នក ចាប់ផ្តើមពីការការពារទាន់ពេលវេលា',
-    heroTitleEn: 'Better Heart Health Decisions Start Here.',
+    heroTitleKm: 'សុខភាពរបស់អ្នក ចាប់ផ្តើមពីការការពារទាន់ពេលវេលា',
+    heroTitleEn: 'Better Health Decisions Start Here.',
     heroSubtitleKm: 'វាយតម្លៃហានិភ័យជំងឺបេះដូងតាមរយៈ AI Machine Learning ជាមួយរបៀបអ្នកជំងឺទូទៅ និងរបៀបវេជ្ជបណ្ឌិតគ្លីនិក។',
     heroSubtitleEn: 'Assess cardiovascular disease risk using our verified 16-factor Machine Learning model with Patient and Clinical modes.',
 
@@ -291,7 +291,7 @@ export const TRANSLATIONS = {
     chatEmergencyNote: 'For critical medical emergencies, immediately call 119 (Ambulance) or 115',
 
     // Hero text
-    heroTitleKm: 'សុខភាពបេះដូងរបស់អ្នក ចាប់ផ្តើមពីការការពារទាន់ពេលវេលា',
+    heroTitleKm: 'សុខភាពរបស់អ្នក ចាប់ផ្តើមពីការការពារទាន់ពេលវេលា',
     heroTitleEn: 'Better Health Decisions Start Here.',
     heroSubtitleKm: 'វាយតម្លៃហានិភ័យជំងឺបេះដូងតាមរយៈ AI Machine Learning ជាមួយរបៀបអ្នកជំងឺទូទៅ និងរបៀបវេជ្ជបណ្ឌិតគ្លីនិក។',
     heroSubtitleEn: 'Assess cardiovascular disease risk and triage general symptoms using our verified clinical models with Patient and Clinical modes.',
