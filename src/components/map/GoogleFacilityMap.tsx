@@ -5,6 +5,12 @@ import { HealthcareFacility } from '@/types/triage';
 import { useLanguage } from '@/context/LanguageContext';
 import { Locate, Layers, AlertCircle } from 'lucide-react';
 
+declare global {
+  interface Window {
+    google?: any;
+  }
+}
+
 interface GoogleFacilityMapProps {
   facilities: HealthcareFacility[];
   userLat?: number;
@@ -24,10 +30,10 @@ export default function GoogleFacilityMap({
   const isKm = language === 'km';
 
   const mapContainerRef = useRef<HTMLDivElement>(null);
-  const mapInstanceRef = useRef<google.maps.Map | null>(null);
-  const markersRef = useRef<google.maps.Marker[]>([]);
-  const userMarkerRef = useRef<google.maps.Marker | null>(null);
-  const infoWindowRef = useRef<google.maps.InfoWindow | null>(null);
+  const mapInstanceRef = useRef<any>(null);
+  const markersRef = useRef<any[]>([]);
+  const userMarkerRef = useRef<any>(null);
+  const infoWindowRef = useRef<any>(null);
 
   const [mapLoaded, setMapLoaded] = useState<boolean>(false);
   const [loadError, setLoadError] = useState<string | null>(null);
