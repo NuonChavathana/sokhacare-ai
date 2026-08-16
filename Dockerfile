@@ -17,6 +17,7 @@ COPY . .
 # Build Next.js with standalone output
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NODE_ENV=production
+ENV BUILD_STANDALONE=true
 RUN npm run build
 
 # Stage 4: Production Runner
