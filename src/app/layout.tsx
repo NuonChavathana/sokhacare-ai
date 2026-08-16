@@ -16,7 +16,11 @@ const kantumruyPro = Kantumruy_Pro({
 
 export const metadata: Metadata = {
   title: 'SokhaCare AI | Khmer AI Healthcare Triage & Navigation Platform',
-  description: 'Khmer AI healthcare symptom triage, red-flag emergency detection, and healthcare facility navigator for Cambodia.'
+  description: 'Khmer AI healthcare symptom triage, red-flag emergency detection, and healthcare facility navigator for Cambodia.',
+  icons: {
+    icon: '/sokhacare.jpg',
+    apple: '/sokhacare.jpg',
+  }
 };
 
 export default function RootLayout({
